@@ -1,8 +1,20 @@
+$social-spacing: 2rem;
+$social-size: 1.5rem;
+
 .footer {
   background-color: $bg-color-two;
 
   .nav-link,
   .copyright {
     color: white !important;
+    font-size: $font-size-sm;
+  }
+
+  .social-item {
+    i {
+      font-size: $social-size;
+      padding: 0 $social-spacing;
+      color: $light-color;
+    }
   }
 }

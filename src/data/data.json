@@ -1,7 +1,8 @@
 {
     "name": {
         "firstName": "Darian",
-        "lastName": "Nocera"
+        "lastName": "Nocera",
+        "fullName": "Darian Nocera"
     },
     "titles": [
         "Web Designer.",
@@ -16,18 +17,22 @@
         {
           "name": "linkedin",
           "url": "https://www.linkedin.com/in/darian-nocera/",
-          "className": "fab fa-linkedin"
+          "faClass": "fab fa-linkedin"
         },
         {
           "name": "github",
           "url": "https://github.com/darnocer",
-          "className": "fab fa-github"
+          "faClass": "fab fa-github"
         },
         {
           "name": "dev.to",
           "url": "https://dev.to/darnocer",
-          "className": "fab fa-dev"
+          "faClass": "fab fa-dev"
         }
-      ]
+      ],
+
+  "footer": {
+    "copyrightText": "All Rights Reserved."
+  }
 
 }
