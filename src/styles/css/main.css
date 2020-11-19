@@ -1,0 +1,72 @@
+html,
+body,
+#app {
+  height: 100%; }
+
+header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url(../../assets/images/header-background.jpg) no-repeat center center fixed;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center; }
+  header .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header .banner .banner-text {
+      color: #ffffff; }
+
+.test {
+  border: 1px solid red; }
+
+section {
+  min-height: 500px;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  padding: 3rem; }
+  section .container {
+    padding: 2rem; }
+  section h1 {
+    padding-bottom: 2rem; }
+
+#about {
+  background-color: #eeeeee; }
+  #about .profile-pic {
+    width: 100%;
+    border-radius: 50%; }
+
+#skills {
+  background-color: #333333; }
+
+#contact {
+  background-color: #eeeeee; }
+
+@media only screen and (max-width: 900px) {
+  header .banner {
+    padding-bottom: 12px; } }
+
+@media only screen and (max-width: 767px) {
+  header .banner {
+    padding-bottom: 12px;
+    padding-top: 6px; } }
+
+@media only screen and (max-width: 480px) {
+  header .banner {
+    padding-top: 24px; } }
+
+.footer {
+  background-color: #333333; }
+  .footer .nav-link,
+  .footer .copyright {
+    color: white !important; }

@@ -2,6 +2,32 @@
     "name": {
         "firstName": "Darian",
         "lastName": "Nocera"
-    }
+    },
+    "titles": [
+        "Web Designer.",
+        "Web Developer.",
+        "Technical Expert",
+        "Soul Scientist"
+    ], 
+    "description": "I love to make connections, explore possibilities, and solve complex problems.",
+    "city": "Denver",
+    "bio": "I have always taken an interest in technology & design. I'm passionate about using these tools creatively to inspire others and make the world a better place! After graduating a coding boot camp in 2020, I finally felt the confidence to pursue development & web design head-on. When I'm not coding, you can find me camping, hiking, mountain biking, practicing yoga, writing, reading, tending to my plants, or traveling.",
+    "social": [
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/darian-nocera/",
+          "className": "fab fa-linkedin"
+        },
+        {
+          "name": "github",
+          "url": "https://github.com/darnocer",
+          "className": "fab fa-github"
+        },
+        {
+          "name": "dev.to",
+          "url": "https://dev.to/darnocer",
+          "className": "fab fa-dev"
+        }
+      ]
 
 }

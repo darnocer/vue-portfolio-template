@@ -1,17 +1,17 @@
 <template>
-<header>
+<header class="bg">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">dariannocera.</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav pull-right">
+    <div class="navbar-nav ml-auto">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">About</a>
-      <a class="nav-item nav-link" href="#">Skills</a>
-      <a class="nav-item nav-link" href="#">Projects</a>
-      <a class="nav-item nav-link" href="#">Contact</a>
+      <a class="nav-item nav-link" href="#about">About</a>
+      <a class="nav-item nav-link" href="#skills">Skills</a>
+      <a class="nav-item nav-link" href="#projects">Projects</a>
+      <a class="nav-item nav-link" href="#contact">Contact</a>
     </div>
   </div>
 </nav>
@@ -21,7 +21,8 @@
 
 <script>
 
-import Hero from './Hero.vue'
+import Hero from '../components/Hero.vue'
+import data from "../data/data.json";
 
 export default {
   name: 'Header',
@@ -30,12 +31,15 @@ export default {
   },
   props: {
   },
+  data() {
+    return {
+      data: data,
+      }
+    }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-@import "../styles/css/style.css";
+<style lang="scss">
+@import "../styles/scss/_variables.scss";
 
 </style>

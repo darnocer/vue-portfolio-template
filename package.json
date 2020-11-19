@@ -1,16 +1,21 @@
 {
-  "name": "client-management",
+  "name": "vue-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "sass": "node-sass --watch src/styles/scss -o src/styles/css"
+    "sass": "node-sass --watch src/styles/scss/main.scss -o src/styles/css"
   },
   "dependencies": {
+    "@babel/core": "^7.12.3",
+    "babel-loader": "^8.2.1",
     "core-js": "^3.6.5",
+    "eslint-loader": "2.1.2",
     "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "typewriter-effect": "^2.13.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {

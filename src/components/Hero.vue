@@ -1,16 +1,20 @@
 <template>
-  <div>
-  HEY
-  </div>
+  
+  <Banner />
+ 
 </template>
 
 <script>
+import Banner from '../components/Banner.vue'
 import data from "../data/data.json";
+
 
 export default {
   name: 'Hero',
   props: {
-    msg: String
+  },
+  components: {
+    Banner,
   },
   data() {
     return {
@@ -20,7 +24,8 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-@import "../styles/css/style.css";
+<style lang="scss">
+@import "../styles/scss/_variables.scss";
+
+
 </style>
