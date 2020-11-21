@@ -10,6 +10,14 @@ header {
   -webkit-background-size: cover !important;
   text-align: center;
 
+  nav {
+    .active {
+      a {
+        color: lime !important;
+      }
+    }
+  }
+
   .banner {
     display: inline-block;
     vertical-align: middle;
@@ -26,8 +34,4 @@ header {
       color: $light-color;
     }
   }
-}
-
-.test {
-  border: 1px solid red;
 }
