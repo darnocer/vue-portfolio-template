@@ -1,7 +1,5 @@
 <template>
 
-<!-- Could we make the "section container" a component and pass in the data as a prop?  -->
-
   <section id="skills">
     <div class="container test">
       <h1>Skills</h1>

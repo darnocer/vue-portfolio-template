@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import Banner from '../components/Banner.vue'
+
+import Banner from '../components/Banner.vue';
 import data from "../data/data.json";
 
 
@@ -15,6 +16,7 @@ export default {
   },
   components: {
     Banner,
+   
   },
   data() {
     return {
