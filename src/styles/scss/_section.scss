@@ -4,7 +4,7 @@ section {
   background-size: cover;
   text-align: center;
   position: relative;
-  padding: 3rem;
+  padding: $spacer;
 
   .container-fluid {
     padding: 2rem;
@@ -20,11 +20,22 @@ section {
   }
 }
 
-// how to alternate bg colors for sections?
+.light-section {
+  background-color: $light-color;
+  color: $dark-color;
+}
+
+.dark-section {
+  background-color: $dark-color;
+  color: $light-color;
+}
+
+.grey-section {
+  background-color: $grey-color;
+  color: $dark-color;
+}
 
 #about {
-  background-color: $bg-color-one;
-
   .profile-pic {
     max-width: 100%;
     max-height: 300px;
@@ -36,13 +47,7 @@ section {
   }
 }
 
-#skills {
-  background-color: $bg-color-two;
-}
-
 #projects {
-  background-color: $light-color;
-
   .portfolio-item {
     position: relative;
 
@@ -85,8 +90,4 @@ section {
       padding: 2rem;
     }
   }
-}
-
-#contact {
-  background-color: $bg-color-one;
 }

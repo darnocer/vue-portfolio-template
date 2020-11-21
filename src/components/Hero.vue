@@ -12,12 +12,10 @@ import data from "../data/data.json";
 
 export default {
   name: 'Hero',
-  props: {
-  },
   components: {
     Banner,
-   
   },
+  props: {},
   data() {
     return {
       data: data,

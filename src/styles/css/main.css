@@ -2,7 +2,26 @@ html,
 body,
 #app {
   height: 100%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-family: "Karla", sans-serif;
+  font-weight: 400; }
+
+body {
+  overflow-x: hidden; }
+
+h1,
+h2,
+h3 {
+  font-family: "Rubik", sans-serif; }
+
+.nav-item {
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem; }
+
+.bg-dark {
+  background-color: #222222 !important; }
 
 .test {
   border: 2px solid red; }
@@ -15,8 +34,12 @@ header {
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center; }
+  header .navbar-dark a {
+    color: #f0f0f0 !important; }
+  header nav a {
+    color: #f0f0f0 !important; }
   header nav .active a {
-    color: lime !important; }
+    color: #2ecc71 !important; }
   header .banner {
     display: inline-block;
     vertical-align: middle;
@@ -29,7 +52,9 @@ header {
     left: 50%;
     transform: translate(-50%, -50%); }
     header .banner .banner-text {
-      color: #ffffff; }
+      color: #f0f0f0; }
+      header .banner .banner-text .display-text {
+        font-size: 90px; }
 
 .arrow-container {
   position: absolute;
@@ -39,7 +64,7 @@ header {
   text-align: center; }
   .arrow-container a {
     margin: auto;
-    color: #ffffff; }
+    color: #f0f0f0; }
 
 section {
   min-height: 100%;
@@ -47,7 +72,7 @@ section {
   background-size: cover;
   text-align: center;
   position: relative;
-  padding: 3rem; }
+  padding: 2rem; }
   section .container-fluid {
     padding: 2rem;
     margin: 6rem auto; }
@@ -56,49 +81,53 @@ section {
   section h1 {
     padding-bottom: 2rem; }
 
-#about {
-  background-color: #eeeeee; }
-  #about .profile-pic {
-    max-width: 100%;
-    max-height: 300px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  #about #about-content {
-    text-align: justify; }
+.light-section {
+  background-color: #f0f0f0;
+  color: #333333; }
 
-#skills {
-  background-color: #333333; }
+.dark-section {
+  background-color: #333333;
+  color: #f0f0f0; }
 
-#projects {
-  background-color: #ffffff; }
-  #projects .portfolio-item {
-    position: relative; }
-    #projects .portfolio-item img {
-      width: 100%;
-      display: block; }
-    #projects .portfolio-item .overlay {
-      position: absolute;
-      padding: inherit;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      opacity: 0;
-      transition: 0.5s ease;
-      background-color: #333333; }
-      #projects .portfolio-item .overlay .portfolio-item-meta {
-        color: #ffffff;
-        padding: 2rem; }
-        #projects .portfolio-item .overlay .portfolio-item-meta i {
-          margin: 1rem; }
-    #projects .portfolio-item:hover .overlay {
-      opacity: 0.8; }
-  #projects .list-inline a {
-    padding: 2rem; }
+.grey-section {
+  background-color: #b4b6b8;
+  color: #333333; }
 
-#contact {
-  background-color: #eeeeee; }
+#about .profile-pic {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#about #about-content {
+  text-align: justify; }
+
+#projects .portfolio-item {
+  position: relative; }
+  #projects .portfolio-item img {
+    width: 100%;
+    display: block; }
+  #projects .portfolio-item .overlay {
+    position: absolute;
+    padding: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #333333; }
+    #projects .portfolio-item .overlay .portfolio-item-meta {
+      color: #f0f0f0;
+      padding: 2rem; }
+      #projects .portfolio-item .overlay .portfolio-item-meta i {
+        margin: 1rem; }
+  #projects .portfolio-item:hover .overlay {
+    opacity: 0.8; }
+
+#projects .list-inline a {
+  padding: 2rem; }
 
 @media only screen and (max-width: 900px) {
   header .banner {
@@ -122,4 +151,4 @@ section {
   .footer .social-item i {
     font-size: 1.5rem;
     padding: 0 2rem;
-    color: #ffffff; }
+    color: #f0f0f0; }

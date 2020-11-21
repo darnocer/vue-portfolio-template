@@ -1,17 +1,17 @@
 <template>
-  <section id="projects">
+  <section id="projects" class="dark-section">
     <div class="container-fluid">
       <h1>Projects</h1>
       <div class="row no-wrap">
         <ul class="list-inline mx-auto filters">
           <li class="list-inline-item filter">
-            <a href="#">Development</a>
+            <a class="nav-item" href="#">Development</a>
           </li>
           <li class="list-inline-item filter">
-            <a href="#">Design</a>
+            <a class="nav-item" href="#">Design</a>
             </li>
           <li class="list-inline-item filter">
-            <a href="#">#IAMTUF</a>
+            <a class="nav-item" href="#">#IAMTUF</a>
           </li>
         </ul>
       </div>

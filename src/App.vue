@@ -6,21 +6,20 @@
     <Projects />
     <Contact />
     <Footer />
-
   </div>
 </template>
 
 <script>
-import Header from './pages/Header.vue';
-import About from './pages/About.vue';
-import Skills from './pages/Skills.vue';
-import Projects from './pages/Projects.vue';
-import Contact from './pages/Contact.vue';
-import Footer from './pages/Footer.vue';
+import Header from "./pages/Header.vue";
+import About from "./pages/About.vue";
+import Skills from "./pages/Skills.vue";
+import Projects from "./pages/Projects.vue";
+import Contact from "./pages/Contact.vue";
+import Footer from "./pages/Footer.vue";
 
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     About,
@@ -28,8 +27,7 @@ export default {
     Projects,
     Contact,
     Footer
-
-  }
+}
 }
 </script>
 

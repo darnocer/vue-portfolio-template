@@ -1,5 +1,5 @@
 <template>
-  <section id="contact">
+  <section id="contact" class="light-section">
     <div class="container-fluid">
       <h1>Contact</h1>
       <div class="row">
@@ -37,10 +37,10 @@
               <input type="text" class="form-control" placeholder="Name">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+              <input  id="exampleInputEmail1" type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email">
             </div>
           <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+            <textarea id="exampleFormControlTextarea1" class="form-control" rows="3" placeholder="Message"></textarea>
         </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

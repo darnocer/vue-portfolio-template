@@ -23,6 +23,8 @@ var lastId,
     }
   });
 
+console.log(menuItems);
+
 // Bind to scroll
 $(window).on("scroll", function() {
   // Get container scroll position

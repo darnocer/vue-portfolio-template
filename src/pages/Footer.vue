@@ -1,9 +1,9 @@
 <template>
-<footer class="footer font-small text-center">
+<footer class="footer bg-dark font-small text-center">
   <ul class="list-inline">
     <li class="list-inline-item">
       <a class="nav-item nav-link active" href="#">
-        Home <span class="sr-only">(current)</span>
+        Home
       </a>
     </li>
     <li class="list-inline-item"><a class="nav-item nav-link" href="#about">About</a></li>
