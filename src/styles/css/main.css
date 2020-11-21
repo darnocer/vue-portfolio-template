@@ -69,6 +69,34 @@ section {
 #skills {
   background-color: #333333; }
 
+#projects {
+  background-color: #ffffff; }
+  #projects .portfolio-item {
+    position: relative; }
+    #projects .portfolio-item img {
+      width: 100%;
+      display: block; }
+    #projects .portfolio-item .overlay {
+      position: absolute;
+      padding: inherit;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: #333333; }
+      #projects .portfolio-item .overlay .portfolio-item-meta {
+        color: #ffffff;
+        padding: 2rem; }
+        #projects .portfolio-item .overlay .portfolio-item-meta i {
+          margin: 1rem; }
+    #projects .portfolio-item:hover .overlay {
+      opacity: 0.8; }
+  #projects .list-inline a {
+    padding: 2rem; }
+
 #contact {
   background-color: #eeeeee; }
 
