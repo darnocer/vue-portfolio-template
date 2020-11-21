@@ -16,7 +16,7 @@ import About from './pages/About.vue';
 import Skills from './pages/Skills.vue';
 import Projects from './pages/Projects.vue';
 import Contact from './pages/Contact.vue';
-import Footer from './components/Footer.vue';
+import Footer from './pages/Footer.vue';
 
 
 export default {
@@ -34,5 +34,6 @@ export default {
 </script>
 
 <style>
+@import "./styles/scss/_variables.scss";
 @import "./styles/css/main.css";
 </style>
