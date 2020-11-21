@@ -1,15 +1,19 @@
 section {
   // min-height: 500px;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background-size: cover;
   text-align: center;
   position: relative;
   padding: 3rem;
 
-  .container {
+  .container-fluid {
     padding: 2rem;
     margin: 6rem auto;
+
+    .flex-col {
+      padding: 2rem;
+    }
   }
 
   h1 {
@@ -23,8 +27,13 @@ section {
   background-color: $bg-color-one;
 
   .profile-pic {
-    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #about-content {
+    text-align: justify;
   }
 }
 
