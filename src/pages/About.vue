@@ -5,6 +5,7 @@
   >
     <div class="container-fluid">
       <h1>About Me</h1>
+      <h2 class="tagline">{{about.tagline}}</h2>
       <div class="row">
         <div class="col-sm-12 col-md-4 flex-col">
           <img
@@ -15,13 +16,7 @@
         </div>
         <div class="col-sm-12 col-md-4 flex-col">
           <p id="about-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iste
-            magnam labore dicta amet id autem cumque explicabo dolorem nam
-            quidem rerum inventore, deleniti modi reprehenderit nulla harum
-            quibusdam enim. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Maxime reiciendis voluptatibus corrupti temporibus nobis,
-            magni amet adipisci aliquam unde cumque possimus, nisi veritatis
-            ipsa rerum optio, id harum alias porro?
+            {{about.bio}}
           </p>
           <a href="#">LINK</a>
         </div>
@@ -51,7 +46,7 @@ export default {
   props: {},
   data() {
     return {
-      data: data,
+      about: data.about,
     };
   },
 };

@@ -22,7 +22,7 @@
   </ul>
 
   <div class="copyright">
-    Copyright © {{ new Date().getFullYear() }} {{data.name.fullName}} {{data.footer.copyrightText}}
+    Copyright © {{ new Date().getFullYear() }} {{text.main.name.fullName}} {{text.footer.copyrightText}}
   </div>
 </footer>
 
@@ -41,8 +41,8 @@ export default {
   },
   data() {
     return {
-      data: data,
-      social: data.social
+      text: data,
+      social: data.contact.social
       }
     }
 }

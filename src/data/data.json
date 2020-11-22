@@ -1,4 +1,5 @@
 {
+  "main": {
     "name": {
         "firstName": "Darian",
         "lastName": "Nocera",
@@ -8,29 +9,79 @@
         "Web Designer.",
         "Web Developer.",
         "Technical Expert"
-      ],
- 
-    "description": "I love to make connections, explore possibilities, and solve complex problems.",
-    "city": "Denver",
-    "bio": "I have always taken an interest in technology & design. I'm passionate about using these tools creatively to inspire others and make the world a better place! After graduating a coding boot camp in 2020, I finally felt the confidence to pursue development & web design head-on. When I'm not coding, you can find me camping, hiking, mountain biking, practicing yoga, writing, reading, tending to my plants, or traveling.",
-    "social": [
-        {
-          "name": "linkedin",
-          "url": "https://www.linkedin.com/in/darian-nocera/",
-          "faClass": "fab fa-linkedin"
-        },
-        {
-          "name": "github",
-          "url": "https://github.com/darnocer",
-          "faClass": "fab fa-github"
-        },
-        {
-          "name": "dev.to",
-          "url": "https://dev.to/darnocer",
-          "faClass": "fab fa-dev"
-        }
-      ],
+    ]
+  },
+    "about": {
+      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iste magnam labore dicta amet id autem cumque explicabo dolorem nam quidem rerum inventore, deleniti modi reprehenderit nulla haru quibusdam enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis voluptatibus corrupti temporibus nobis,magni amet adipisci aliquam unde cumque possimus, nisi veritatisipsa rerum optio",
+      "tagline": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    "skills": {
+      "categories":{
+        "categoryA": "Front-End",
+        "categoryB": "Back-End",
+        "categoryC": "Design",
+        "categoryD": "Technical"
+      },
+      "skillLists":{
+        "categoryA": ["HTML5", "CSS3", "React.js", "Vue.js"],
+        "categoryB": ["MongoDB", "MySQL", "Node.js"],
+        "categoryC": ["Adobe Illustrator", "Balsamiq"],
+        "categoryD": ["Git", "SEO", "VSCode"]
+      }
+  },
+  "projects": {
+    "filters": ["Development", "Design"],
+    
+  "portfolio": [
+    {
+      "title": "Date Night",
+      "description": "A one-click solution to planning dates utilizing server-side APIs",
+      "source": "#",
+      "link": "#",
+      "filter": "development",
+      "image": ""
+    },
+    {
+      "title": "Date Night",
+      "description": "A one-click solution to planning dates utilizing server-side APIs",
+      "source": "#",
+      "link": "#",
+      "filter": "development",
+      "image": ""
+    },
+    {
+      "title": "Date Night",
+      "description": "A one-click solution to planning dates utilizing server-side APIs",
+      "source": "#",
+      "link": "#",
+      "filter": "development",
+      "image": ""
+    }
 
+  ]
+},
+    "contact":{
+      "city": "Denver, Colorado",
+      "email": "hello@dariannocera.com",
+      "resumeLink": "#",
+      "social": [
+          {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/darian-nocera/",
+            "faClass": "fab fa-linkedin"
+          },
+          {
+            "name": "github",
+            "url": "https://github.com/darnocer",
+            "faClass": "fab fa-github"
+          },
+          {
+            "name": "dev.to",
+            "url": "https://dev.to/darnocer",
+            "faClass": "fab fa-dev"
+          }
+        ]
+      },
   "footer": {
     "copyrightText": "All Rights Reserved."
   }

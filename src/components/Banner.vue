@@ -15,15 +15,15 @@
   import data from "../data/data.json";
   import Typewriter from "typewriter-effect/dist/core";
 
-  var titles = data.titles;
+  var titles = data.main.titles;
   console.log(titles);
 
   export default {
     name: "Banner",
     data(){
       return {
-        name: data.name,
-        titles: data.titles
+        name: data.main.name,
+        titles: data.main.titles
         }
       },
     mounted: function() {
