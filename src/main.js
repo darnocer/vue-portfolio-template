@@ -23,7 +23,16 @@ var lastId,
     }
   });
 
-console.log(menuItems);
+// put sections in an array
+var sections = [];
+$("#navbar-nav li").each(function() {
+  sections.push(
+    $(this)
+      .find("a")
+      .attr("href")
+  );
+});
+sections = sections.map((x) => x.slice(1));
 
 // Bind to scroll
 $(window).on("scroll", function() {
@@ -37,6 +46,18 @@ $(window).on("scroll", function() {
   // Get the id of the current element
   cur = cur[cur.length - 1];
   var id = cur && cur.length ? cur[0].id : "";
+
+  // get the next section
+  if (id !== "contact") {
+    const currentIndex = sections.indexOf(id);
+    console.log(currentIndex);
+    var nextIndex = currentIndex + 1;
+    var nextSection = sections[nextIndex];
+    // make the arrow jump to the next section
+    $(".arrow").attr("href", `#${nextSection}`);
+  } else {
+    $(".arrow").attr("href", "#");
+  }
 
   if (lastId !== id) {
     lastId = id;
