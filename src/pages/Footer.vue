@@ -8,7 +8,7 @@
     </li>
     <li class="list-inline-item"><a class="nav-item nav-link" href="#about">About</a></li>
     <li class="list-inline-item"><a class="nav-item nav-link" href="#skills">Skills</a></li>
-    <li class="list-inline-item"><a class="nav-item nav-link" href="#projects">Projects</a></li>
+    <li class="list-inline-item"><a class="nav-item nav-link" href="#portfolio">portfolio</a></li>
     <li class="list-inline-item"><a class="nav-item nav-link" href="#contact">Contact</a></li>
   </ul>
 

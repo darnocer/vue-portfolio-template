@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.12.3",
+    "aos": "^2.3.4",
     "babel-loader": "^8.2.1",
     "core-js": "^3.6.5",
     "eslint-loader": "2.1.2",

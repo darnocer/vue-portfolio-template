@@ -10,25 +10,25 @@
         <li class="active"><a class="nav-item nav-link" href="#home">Home</a></li>
         <li><a class="nav-item nav-link" href="#about">About</a></li>
         <li><a class="nav-item nav-link" href="#skills">Skills</a></li>
-        <li><a class="nav-item nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-item nav-link" href="#portfolio">portfolio</a></li>
         <li><a class="nav-item nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
-<Hero/>
+<Banner/>
 <Arrow />
 </header>
 </template>
 
 <script>
 import Arrow from '../components/Arrow.vue';
-import Hero from '../components/Hero.vue'
 import data from "../data/data.json";
+import Banner from '../components/Banner.vue';
 
 export default {
   name: 'Header',
   components: {
-    Hero,
+    Banner,
    Arrow
   },
   props: {

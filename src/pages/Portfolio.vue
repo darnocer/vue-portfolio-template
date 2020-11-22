@@ -1,7 +1,7 @@
 <template>
-  <section id="projects" class="dark-section">
+  <section id="portfolio" class="dark-section">
     <div class="container-fluid">
-      <h1>Projects</h1>
+      <h1>Portfolio</h1>
       <div class="row">
         <ul class="list-inline mx-auto filters">
           <li v-for="item in filters" :key="item" class="list-inline-item filter">
@@ -12,7 +12,7 @@
       
       <div class="portfolio-container">
       <div class="row">
-        <div v-for="item in projects" :key="item.title" class="col-sm-12 col-md-4 flex-col">
+        <div data-aos="fade-right" data-aos-duration="1000" v-for="item in portfolio" :key="item.title" class="col-sm-12 col-md-4 flex-col">
           <div class="portfolio-item test">
             <img src="https://via.placeholder.com/150" alt="portfolio item">
             <div class="overlay">
@@ -47,15 +47,15 @@ import Arrow from "../components/Arrow.vue";
 
 
 export default {
-  name: 'Projects',
+  name: 'portfolio',
   props: {},
   components: {
     Arrow,
     },
   data() {
     return {
-      projects: data.projects.portfolio,
-      filters: data.projects.filters
+      portfolio: data.portfolio.portfolio,
+      filters: data.portfolio.filters
       }
     }
 }

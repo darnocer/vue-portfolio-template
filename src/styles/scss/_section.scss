@@ -55,7 +55,7 @@ section {
   }
 }
 
-#projects {
+#portfolio {
   .container-fluid {
     margin: 4rem auto;
   }
@@ -110,5 +110,11 @@ section {
     a {
       padding: 2rem;
     }
+  }
+}
+
+#contact {
+  .social-item {
+    padding: 0 1rem;
   }
 }

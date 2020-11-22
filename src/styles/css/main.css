@@ -14,6 +14,11 @@ h2,
 h3 {
   font-family: "Rubik", sans-serif; }
 
+h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #747474; }
+
 p {
   font-family: "Karla", sans-serif;
   font-weight: 300; }
@@ -59,6 +64,8 @@ header {
       color: #f0f0f0; }
       header .banner .banner-text .display-text {
         font-size: 90px; }
+      header .banner .banner-text #typewriter {
+        font-size: 50px; }
 
 .arrow-container {
   position: absolute;
@@ -98,7 +105,7 @@ section {
   color: #f0f0f0; }
 
 .grey-section {
-  background-color: #b4b6b8;
+  background-color: #747474;
   color: #333333; }
 
 #about .profile-pic {
@@ -113,21 +120,21 @@ section {
 #about #about-content {
   text-align: justify; }
 
-#projects .container-fluid {
+#portfolio .container-fluid {
   margin: 4rem auto; }
 
-#projects .portfolio-container .flex-col {
+#portfolio .portfolio-container .flex-col {
   padding: 4rem; }
 
-#projects .filters {
+#portfolio .filters {
   margin: 0; }
 
-#projects .portfolio-item {
+#portfolio .portfolio-item {
   position: relative; }
-  #projects .portfolio-item img {
+  #portfolio .portfolio-item img {
     width: 100%;
     display: block; }
-  #projects .portfolio-item .overlay {
+  #portfolio .portfolio-item .overlay {
     position: absolute;
     padding: inherit;
     top: 0;
@@ -138,16 +145,19 @@ section {
     opacity: 0;
     transition: 0.5s ease;
     background-color: #333333; }
-    #projects .portfolio-item .overlay .portfolio-item-meta {
+    #portfolio .portfolio-item .overlay .portfolio-item-meta {
       color: #f0f0f0;
       padding: 2rem; }
-      #projects .portfolio-item .overlay .portfolio-item-meta i {
+      #portfolio .portfolio-item .overlay .portfolio-item-meta i {
         margin: 1rem; }
-  #projects .portfolio-item:hover .overlay {
+  #portfolio .portfolio-item:hover .overlay {
     opacity: 0.8; }
 
-#projects .list-inline a {
+#portfolio .list-inline a {
   padding: 2rem; }
+
+#contact .social-item {
+  padding: 0 1rem; }
 
 @media only screen and (max-width: 900px) {
   header .banner {

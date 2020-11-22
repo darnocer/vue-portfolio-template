@@ -8,7 +8,7 @@
     "titles": [
         "Web Designer.",
         "Web Developer.",
-        "Technical Expert"
+        "Technical Expert."
     ]
   },
     "about": {
@@ -16,20 +16,29 @@
       "tagline": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     "skills": {
-      "categories":{
-        "categoryA": "Front-End",
-        "categoryB": "Back-End",
-        "categoryC": "Design",
-        "categoryD": "Technical"
-      },
-      "skillLists":{
-        "categoryA": ["HTML5", "CSS3", "React.js", "Vue.js"],
-        "categoryB": ["MongoDB", "MySQL", "Node.js"],
-        "categoryC": ["Adobe Illustrator", "Balsamiq"],
-        "categoryD": ["Git", "SEO", "VSCode"]
-      }
+        "categoryA": 
+          {
+            "name": "Front-End",
+            "faClass": "fas fa-code",
+            "skillList": ["HTML5", "CSS3", "Javascript", "React.js", "Vue.js", "Bootstrap & Other CSS Frameworks", "jQuery", "Handlebars", "Typescript"]
+          },
+        "categoryB": {
+            "name": "Back-End",
+            "faClass": "fas fa-terminal",
+            "skillList": ["Node.js", "NOSQL (MongoDB)", "SQL (MySQL)", "Express.js", "Mongoose"]
+          },
+        "categoryC": {
+          "name": "Design",
+          "faClass": "fas fa-paint-brush",
+          "skillList": ["Adobe Illustrator", "Balsamiq", "Canva", "SquareSpace", "GoDaddy", "Mobile-Responsiveness"]
+        },
+        "categoryD": {
+          "name": "Technical",
+          "faClass": "fas fa-code-branch",
+          "skillList": ["Git", "SEO", "VSCode", "RESTful APIs", "JSON", "Heroku", "Netlify", "Microsoft Suite"]
+        }
   },
-  "projects": {
+  "portfolio": {
     "filters": ["Development", "Design"],
     
   "portfolio": [
@@ -68,17 +77,22 @@
           {
             "name": "linkedin",
             "url": "https://www.linkedin.com/in/darian-nocera/",
-            "faClass": "fab fa-linkedin"
+            "faClass": "fab fa-linkedin fa-lg"
           },
           {
             "name": "github",
             "url": "https://github.com/darnocer",
-            "faClass": "fab fa-github"
+            "faClass": "fab fa-github fa-lg"
           },
           {
             "name": "dev.to",
             "url": "https://dev.to/darnocer",
-            "faClass": "fab fa-dev"
+            "faClass": "fab fa-dev fa-lg"
+          },
+          {
+            "name": "codepen",
+            "url": "https://codepen.io/dariannocera",
+            "faClass": "fab fa-codepen fa-lg"
           }
         ]
       },

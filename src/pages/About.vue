@@ -7,20 +7,20 @@
       <h1>About Me</h1>
       <h2 class="tagline">{{about.tagline}}</h2>
       <div class="row">
-        <div class="col-sm-12 col-md-4 flex-col">
+        <div class="col-sm-12 col-md-4 flex-col" data-aos="fade-right" data-aos-duration="1000">
           <img
             class="profile-pic"
             src="../assets/images/profile-pic.png"
             alt="profile picture"
           >
         </div>
-        <div class="col-sm-12 col-md-4 flex-col">
+        <div class="col-sm-12 col-md-4 flex-col" data-aos="fade-right" data-aos-duration="1000">
           <p id="about-content">
             {{about.bio}}
           </p>
           <a href="#">LINK</a>
         </div>
-        <div class="col-sm-12 col-md-4 flex-col">
+        <div class="col-sm-12 col-md-4 flex-col" data-aos="fade-right" data-aos-duration="1000">
           <ul>
             <li>hello world</li>
             <li>hello world</li>
