@@ -4,7 +4,7 @@
   <div class="banner">
     <div class="banner-text">
       <h1 class="display-text">
-        {{ data.fullName }}
+        {{ name.fullName }}
       </h1>
       <h2 id="typewriter"></h2>
     </div>
@@ -15,16 +15,20 @@
   import data from "../data/data.json";
   import Typewriter from "typewriter-effect/dist/core";
 
+  var titles = data.titles;
+  console.log(titles);
+
   export default {
     name: "Banner",
     data(){
       return {
-        data: data.name,
+        name: data.name,
+        titles: data.titles
         }
       },
     mounted: function() {
       new Typewriter('#typewriter', {
-      strings: ['Web Designer.', 'Web Developer.', 'Technical Expert.'],
+      strings: titles,
       autoStart: true,
       loop: true,
           deleteSpeed:5,
