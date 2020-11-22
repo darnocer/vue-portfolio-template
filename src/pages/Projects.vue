@@ -2,7 +2,7 @@
   <section id="projects" class="dark-section">
     <div class="container-fluid">
       <h1>Projects</h1>
-      <div class="row no-wrap">
+      <div class="row">
         <ul class="list-inline mx-auto filters">
           <li class="list-inline-item filter">
             <a class="nav-item" href="#">Development</a>
@@ -15,10 +15,11 @@
           </li>
         </ul>
       </div>
-      <h2>Filter</h2>
+      
+      <div class="portfolio-container">
       <div class="row">
-        <div class="col-sm-12 col-md-4 flex-col">
-          <div class="portfolio-item">
+        <div class="col-sm-12 col-md-4 flex-col test">
+          <div class="portfolio-item test">
             <img src="https://via.placeholder.com/150" alt="portfolio item">
             <div class="overlay">
               <div class="portfolio-item-meta">
@@ -39,29 +40,34 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 flex-col">
-          <div class="portfolio-item">
+        <div class="col-sm-12 col-md-4 flex-col test">
+          <div class="portfolio-item test">
             <img src="https://via.placeholder.com/150"/>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 flex-col">
-          <div class="portfolio-item">
+        <div class="col-sm-12 col-md-4 flex-col test">
+          <div class="portfolio-item test">
             <img src="https://via.placeholder.com/150"/>
           </div>
         </div>
       </div>
+      </div>
     </div>
+    <Arrow />
   </section>
 </template>
 
 <script>
 import data from "../data/data.json";
+import Arrow from "../components/Arrow.vue";
 
 
 export default {
   name: 'Projects',
-  props: {
-  },
+  props: {},
+  components: {
+    Arrow,
+    },
   data() {
     return {
       data: data,

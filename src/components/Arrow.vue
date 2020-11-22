@@ -1,6 +1,6 @@
 <template>
   <div class="row arrow-container">
-    <a class="arrow" href="#about">
+    <a class="arrow" href="#">
       <i class="fas fa-chevron-down fa-4x"></i>
     </a>
   </div>
