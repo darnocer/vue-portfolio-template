@@ -1,4 +1,3 @@
-$social-spacing: 2rem;
 $social-size: 1.5rem;
 
 .footer {
@@ -13,7 +12,7 @@ $social-size: 1.5rem;
   .social-item {
     i {
       font-size: $social-size;
-      padding: 0 $social-spacing;
+      padding: 0 $spacer;
       color: $light-color;
     }
   }

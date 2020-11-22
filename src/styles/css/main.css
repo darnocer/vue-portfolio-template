@@ -14,6 +14,10 @@ h2,
 h3 {
   font-family: "Rubik", sans-serif; }
 
+p {
+  font-family: "Karla", sans-serif;
+  font-weight: 300; }
+
 .nav-item {
   font-family: "Karla", sans-serif;
   text-transform: uppercase;
@@ -102,6 +106,9 @@ section {
   max-height: 300px;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#about .tagline {
+  font-size: 1.5rem; }
 
 #about #about-content {
   text-align: justify; }
