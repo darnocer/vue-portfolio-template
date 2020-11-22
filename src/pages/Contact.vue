@@ -4,31 +4,39 @@
     <div class="container-fluid">
       <h1>Contact</h1>
       <div class="row">
-        <div class="col-sm-12 col-md-6 flex-col">
-          <ul>
-            <li>
-              <i class="fas fa-map-marker-alt fa-lg"></i>
+        <div class="col-sm-12 col-md-6 flex-col" data-aos="fade-right" data-aos-duration="1000">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h3 class="d-inline"><i class="fas fa-map-marker-alt"></i> Location: </h3>
               <span>&nbsp; {{contact.city}}</span>
             </li>
-            <li>
-              <i class="fa fa-envelope fa-lg"></i>&nbsp;
+            <li class="list-group-item">
+              <h3 class="d-inline">
+              <i class="fa fa-envelope fa-lg"></i> Email: </h3>
               <a href="mailto:hello@dariannocera.com">
                 <span>{{contact.email}}</span>
               </a>
               </li>
-            <li v-for="(item,i) in social" :key="i" 
-            class="social-item list-inline-item">
+              <li class="list-group-item">
+                <h3 class="d-inline"><i class="fas fa-user-plus"></i> Social: </h3>
+         
+            <div v-for="(item,i) in social" :key="i" 
+            class="social-item social-spacing list-inline-item">
               <a :href= item.url :alt= item.name>
                 <i :class= item.faClass > </i>
               </a>
+              </div>
             </li>
-        </ul>
-        <a :href="contact.resumeLink" class="btn btn-primary" target="_blank">
-          <i class="far fa-file-pdf"></i>
-          Resume
+            <li class="list-group-item">
+              <h3 class="d-inline"> <i class="far fa-file-pdf"></i> Resume: </h3>
+          <a :href="contact.resumeLink" target="_blank">
+          PDF
         </a>
+        </li>
+        </ul>
+
       </div>
-      <div class="col-sm-12 col-md-6 flex-col">
+      <div class="col-sm-12 col-md-6 flex-col" data-aos="fade-right" data-aos-duration="1000">
         <form>
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Name">
