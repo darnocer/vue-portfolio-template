@@ -59,8 +59,10 @@ header {
 .arrow-container {
   position: absolute;
   bottom: 0;
-  margin: auto;
+  left: 0;
+  right: 0;
   width: 100%;
+  margin: 0;
   text-align: center; }
   .arrow-container a {
     margin: auto;
@@ -84,6 +86,8 @@ section {
 .light-section {
   background-color: #f0f0f0;
   color: #333333; }
+  .light-section a {
+    color: #2ecc71; }
 
 .dark-section {
   background-color: #333333;
@@ -101,6 +105,15 @@ section {
 
 #about #about-content {
   text-align: justify; }
+
+#projects .container-fluid {
+  margin: 4rem auto; }
+
+#projects .portfolio-container .flex-col {
+  padding: 4rem; }
+
+#projects .filters {
+  margin: 0; }
 
 #projects .portfolio-item {
   position: relative; }

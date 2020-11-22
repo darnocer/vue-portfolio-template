@@ -23,6 +23,9 @@ section {
 .light-section {
   background-color: $light-color;
   color: $dark-color;
+  a {
+    color: $accent-color;
+  }
 }
 
 .dark-section {
@@ -48,8 +51,21 @@ section {
 }
 
 #projects {
+  .container-fluid {
+    margin: 4rem auto;
+  }
+  .portfolio-container {
+    .flex-col {
+      padding: 4rem;
+    }
+  }
+
+  .filters {
+    margin: 0;
+  }
   .portfolio-item {
     position: relative;
+    // padding: 2rem;
 
     img {
       width: 100%;
