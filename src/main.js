@@ -50,7 +50,6 @@ $(window).on("scroll", function() {
   // get the next section
   if (id !== "contact") {
     const currentIndex = sections.indexOf(id);
-    console.log(currentIndex);
     var nextIndex = currentIndex + 1;
     var nextSection = sections[nextIndex];
     // make the arrow jump to the next section

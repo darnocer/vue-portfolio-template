@@ -8,63 +8,146 @@
     "titles": [
         "Web Designer.",
         "Web Developer.",
-        "Technical Expert."
-    ]
+        "Technical Expert.",
+        "Eccentric Weirdo."
+    ],
+    "headings": {
+      "about": "About Ya Gurl",
+      "skills": "Skillz that Killz",
+      "portfolio": "Portfolio",
+      "contact": "Holla @ Me"
+    }
   },
     "about": {
-      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iste magnam labore dicta amet id autem cumque explicabo dolorem nam quidem rerum inventore, deleniti modi reprehenderit nulla haru quibusdam enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis voluptatibus corrupti temporibus nobis,magni amet adipisci aliquam unde cumque possimus, nisi veritatisipsa rerum optio",
-      "tagline": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      "bio": "I have always taken an interest in programming & design - I enjoy the systematic approach to problem-solving coupled with the abstract creative self-expression. After completing a coding boot camp in 2020, I finally felt the confidence to pursue development & design head on. When I'm not coding, you can find me camping, hiking, mountain biking, practicing yoga, writing, reading, tending to my plants, or traveling.",
+      "tagline": "",
+      "facts": [
+        {"name": "Hometown",
+        "value": "Pittsburgh, PA"
+        },
+        {"name": "Alma Mater",
+        "value": "Penn State University"
+        },
+        {"name": "Degree",
+          "value": "Biomedical Engineering"
+          },
+        {"name": "Sun Sign",
+        "value": "Aquarius"
+        },
+        {"name": "Pizza Toppings",
+          "value": "Hawaiian"
+        }
+      ]
     },
     "skills": {
         "categoryA": 
           {
-            "name": "Front-End",
-            "faClass": "fas fa-code",
-            "skillList": ["HTML5", "CSS3", "Javascript", "React.js", "Vue.js", "Bootstrap & Other CSS Frameworks", "jQuery", "Handlebars", "Typescript"]
+            "name": "Project Managment",
+            "subtitle": "I know how to get $#!+ done.",
+            "bullets": ["Healthcare software consultant", "5 years experience managing enterprise software implementations"],
+            "faClass": "fas fa-tasks"
           },
         "categoryB": {
-            "name": "Back-End",
-            "faClass": "fas fa-terminal",
-            "skillList": ["Node.js", "NOSQL (MongoDB)", "SQL (MySQL)", "Express.js", "Mongoose"]
+            "name": "Web Development",
+            "subtitle": "Not gonna lie, I like front-end better.",
+            "bullets": ["Graduated from Coding Boot Camp in 2020"],
+            "faClass": "fas fa-terminal"
           },
         "categoryC": {
-          "name": "Design",
-          "faClass": "fas fa-paint-brush",
-          "skillList": ["Adobe Illustrator", "Balsamiq", "Canva", "SquareSpace", "GoDaddy", "Mobile-Responsiveness"]
+          "name": "Website Design",
+          "subtitle": "Started on MySpace now I'm here.",
+          "bullets": ["Taught myself HTML/CSS when I was 12","Website designer for The Underdog Foundation"],
+          "faClass": "fas fa-paint-brush"
         },
         "categoryD": {
-          "name": "Technical",
-          "faClass": "fas fa-code-branch",
-          "skillList": ["Git", "SEO", "VSCode", "RESTful APIs", "JSON", "Heroku", "Netlify", "Microsoft Suite"]
-        }
+          "name": "Technical Expertise",
+          "faClass": "fas fa-cogs",
+          "bullets": ["5 years experience supporting end-users", "Technical Lead for The Underdog Foundation"],
+          "subtitle": "I'm like, really good at Googling."
+        },
+        "hardSkills": [
+          {
+            "name": "HTML &bull; CSS",
+            "level": "90"
+          },
+          {
+            "name": "Javascript &bull; jQuery",
+            "level": "70"
+          },
+          {
+            "name": "React.js &bull; Vue.js",
+            "level": "60"
+          },
+          {
+            "name": "SQL &bull; MongoDB",
+            "level": "50"
+          },
+          {
+            "name": "Git &bull; Node.js",
+            "level": "90"
+          }
+
+        ],
+        "skillList": [
+          "HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "React.JS", "Vue.js", "Node.js", "SQL (My SQL)", "NoSQL (MongoDB)", "Git", "Github", "SVN", "Adobe Illustrator", "SquareSpace"
+        ]
   },
-  "portfolio": {
-    "filters": ["Development", "Design"],
-    
-  "portfolio": [
+"portfolio": {
+  "defaultFilter": "full-stack",
+  "projects": [
     {
-      "title": "Date Night",
-      "description": "A one-click solution to planning dates utilizing server-side APIs",
-      "source": "#",
-      "link": "#",
-      "filter": "development",
-      "image": ""
+      "title": "HelpersConnect",
+      "description": "A MERN-stack app that allows charitable organizations to manage events and volunteers.",
+      "type": "Group",
+      "image": "helpersconnect.png",
+      "link": "https://project-03-volunteer-calendar.herokuapp.com/",
+      "source": "https://github.com/darnocer/HelpersConnect",
+      "filter": "full-stack"
+        },
+    {
+      "title": "Code Connect",
+      "description": "A full-stack social platform for developers to connect to meet, collaborate, and learn",
+      "type": "Group",
+      "image": "codeconnect.png",
+      "link": "https://project-02-code-connect.herokuapp.com/",
+      "source": "https://github.com/darnocer/Project-02-Code-Connect",
+      "filter": "full-stack"
     },
     {
-      "title": "Date Night",
-      "description": "A one-click solution to planning dates utilizing server-side APIs",
-      "source": "#",
-      "link": "#",
-      "filter": "development",
-      "image": ""
+      "title": "Date Nite",
+      "description": "A one-click solution to planning dates utilizing server-side APIs.",
+      "type": "Group",
+      "image": "datenite.png",
+      "link": "https://darnocer.github.io/Project-01-Date-Nite-App/",
+      "source": "https://github.com/darnocer/Project-01-Date-Nite-App",
+      "filter": "front-end"
     },
     {
-      "title": "Date Night",
-      "description": "A one-click solution to planning dates utilizing server-side APIs",
-      "source": "#",
-      "link": "#",
-      "filter": "development",
-      "image": ""
+      "title": "Read-Da-Book",
+      "description": "An application to manage a reading list of books on a SQL database rendered with Handlebars.",
+      "type": "Individual",
+      "image": "readinglist.png",
+      "link": "https://obscure-scrubland-69219.herokuapp.com/",
+      "source": "https://github.com/darnocer/Node-Express-Handlebars-Reading-List",
+      "filter": "full-stack"
+    },
+    {
+      "title": "Weather Dashboard",
+      "description": "A weather application utilizing server-side APIs and persistent data via local storage.",
+      "type": "Individual",
+      "image": "dashboard.png",
+      "link": "https://darnocer.github.io/Server-Side-APIs-Weather-Dashboard/",
+      "source": "https://github.com/darnocer/Server-Side-APIs-Weather-Dashboard",
+      "filter": "front-end"
+    },
+    {
+      "title": "Code Quiz",
+      "description": "A vanilla Javascript quiz about vanilla Javascript.",
+      "type": "Individual",
+      "image": "codequiz.png",
+      "link": "https://darnocer.github.io/Web-APIs-Code-Quiz/",
+      "source": "https://github.com/darnocer/Web-APIs-Code-Quiz",
+      "filter": "front-end"
     }
 
   ]

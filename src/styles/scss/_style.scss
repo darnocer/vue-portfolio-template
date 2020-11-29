@@ -13,7 +13,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: $heading-font;
 }
 
@@ -23,9 +24,40 @@ h3 {
   color: $grey-color;
 }
 
-p {
-  font-family: $body-font;
-  font-weight: 300;
+h4 {
+  font-style: italic;
+  font-size: $font-size-sm;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section {
+  h1 {
+    text-decoration: underline;
+    text-decoration-color: $accent-color;
+    text-decoration-thickness: 6px;
+  }
+  p {
+    font-family: $body-font;
+    font-weight: 300;
+  }
+}
+
+footer {
+  a {
+    color: $light-color;
+  }
+}
+
+#greeting {
+  font-family: $heading-font;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: $accent-color;
+  font-size: 1.2rem;
 }
 
 .nav-item {

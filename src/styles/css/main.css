@@ -11,7 +11,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Rubik", sans-serif; }
 
 h3 {
@@ -19,9 +20,32 @@ h3 {
   font-size: 1.1rem;
   color: #747474; }
 
-p {
+h4 {
+  font-style: italic;
+  font-size: 0.8rem; }
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none; }
+
+section h1 {
+  text-decoration: underline;
+  text-decoration-color: #2ecc71;
+  text-decoration-thickness: 6px; }
+
+section p {
   font-family: "Karla", sans-serif;
   font-weight: 300; }
+
+footer a {
+  color: #f0f0f0; }
+
+#greeting {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #2ecc71;
+  font-size: 1.2rem; }
 
 .nav-item {
   font-family: "Karla", sans-serif;
@@ -43,6 +67,8 @@ header {
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center; }
+  header a:hover {
+    color: #2ecc71; }
   header .navbar-dark a {
     color: #f0f0f0 !important; }
   header nav a {
@@ -87,26 +113,30 @@ section {
   position: relative;
   padding: 2rem; }
   section .container-fluid {
-    padding: 2rem;
+    padding: 1rem;
     margin: 6rem auto; }
     section .container-fluid .flex-col {
       padding: 2rem; }
   section h1 {
     padding-bottom: 2rem; }
+  section .list-group-item {
+    background-color: inherit; }
 
 .light-section {
   background-color: #f0f0f0;
   color: #333333; }
   .light-section a {
-    color: #2ecc71; }
+    color: #333333; }
+    .light-section a:hover {
+      color: #2ecc71; }
 
 .dark-section {
   background-color: #333333;
   color: #f0f0f0; }
-
-.grey-section {
-  background-color: #747474;
-  color: #333333; }
+  .dark-section a {
+    color: #f0f0f0; }
+    .dark-section a:hover {
+      color: #2ecc71; }
 
 #about .profile-pic {
   max-width: 100%;
@@ -118,19 +148,26 @@ section {
   font-size: 1.5rem; }
 
 #about #about-content {
-  text-align: justify; }
+  text-align: justify;
+  font-size: 1 1rem; }
 
 #portfolio .container-fluid {
   margin: 4rem auto; }
 
 #portfolio .portfolio-container .flex-col {
-  padding: 4rem; }
+  padding: 2rem; }
 
 #portfolio .filters {
   margin: 0; }
+  #portfolio .filters .active {
+    color: #2ecc71; }
 
 #portfolio .portfolio-item {
   position: relative; }
+  #portfolio .portfolio-item a {
+    text-decoration: none; }
+  #portfolio .portfolio-item h3 {
+    font-size: 1.2rem; }
   #portfolio .portfolio-item img {
     width: 100%;
     display: block; }
@@ -151,13 +188,102 @@ section {
       #portfolio .portfolio-item .overlay .portfolio-item-meta i {
         margin: 1rem; }
   #portfolio .portfolio-item:hover .overlay {
-    opacity: 0.8; }
+    opacity: 0.95;
+    border: 2px solid #2ecc71;
+    cursor: pointer; }
 
 #portfolio .list-inline a {
   padding: 2rem; }
 
 #contact .social-item {
-  padding: 0 1rem; }
+  padding: 0 0.5rem; }
+
+#contact ul {
+  margin-top: 2rem; }
+
+#skills {
+  padding: 1rem; }
+  #skills .flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.category {
+  height: 50%;
+  width: 100%;
+  margin-top: 1rem; }
+  .category li {
+    list-style-type: square; }
+
+.skillbars {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center; }
+
+.skill {
+  margin: 0.8rem 0;
+  position: relative;
+  width: 22.5em; }
+
+.skill-name {
+  font-size: 0.8em;
+  letter-spacing: 0.145em;
+  text-transform: uppercase; }
+
+.outer-bar,
+.inner-bar {
+  height: 0.75em; }
+
+.outer-bar {
+  margin-top: 1em;
+  background: #333; }
+
+.inner-bar {
+  animation: fillBar 1s forwards;
+  transform: scaleX(0);
+  transform-origin: 0 0; }
+
+.level--100,
+.level--90 {
+  width: 100%;
+  background: #38efc7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #38efc7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #38efc7); }
+
+.level--90 {
+  width: 90%; }
+
+.level--80,
+.level--70 {
+  width: 80%;
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5ba19, #f12711);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5ba19, #f12711); }
+
+.level--70 {
+  width: 70%; }
+
+.level--60,
+.level--50 {
+  width: 60%;
+  background: #63fc27;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffff1c, #63fc27);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffff1c, #63fc27); }
+
+.level--50 {
+  width: 50%; }
+
+@keyframes fillBar {
+  to {
+    transform: scaleX(1); } }
 
 @media only screen and (max-width: 900px) {
   header .banner {
@@ -173,11 +299,14 @@ section {
     padding-top: 24px; } }
 
 .footer {
-  background-color: #333333; }
-  .footer .nav-link,
-  .footer .copyright {
-    color: white !important;
-    font-size: 0.8rem; }
+  background-color: #333333;
+  padding: 1rem;
+  color: white !important;
+  font-size: 0.8rem; }
+  .footer a:hover {
+    color: #2ecc71 !important; }
+  .footer #username {
+    color: #2ecc71; }
   .footer .social-item i {
     font-size: 1.5rem;
     padding: 0 2rem;

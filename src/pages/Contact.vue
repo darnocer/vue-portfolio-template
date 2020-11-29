@@ -2,23 +2,23 @@
 
   <section id="contact" class="light-section">
     <div class="container-fluid">
-      <h1>Contact</h1>
+      <h1>{{heading}}</h1>
       <div class="row">
         <div class="col-sm-12 col-md-6 flex-col" data-aos="fade-right" data-aos-duration="1000">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <h3 class="d-inline"><i class="fas fa-map-marker-alt"></i> Location: </h3>
+              <h3 class="d-inline"><i class="fas fa-map-marker-alt"></i> Location: </h3><br class="d-md-none">
               <span>&nbsp; {{contact.city}}</span>
             </li>
             <li class="list-group-item">
               <h3 class="d-inline">
-              <i class="fa fa-envelope fa-lg"></i> Email: </h3>
+              <i class="fa fa-envelope fa-lg"></i> Email: </h3><br class="d-md-none">
               <a href="mailto:hello@dariannocera.com">
                 <span>{{contact.email}}</span>
               </a>
               </li>
               <li class="list-group-item">
-                <h3 class="d-inline"><i class="fas fa-user-plus"></i> Social: </h3>
+                <h3 class="d-inline"><i class="fas fa-user-plus"></i> Social: </h3><br class="d-md-none">
          
             <div v-for="(item,i) in social" :key="i" 
             class="social-item social-spacing list-inline-item">
@@ -28,7 +28,7 @@
               </div>
             </li>
             <li class="list-group-item">
-              <h3 class="d-inline"> <i class="far fa-file-pdf"></i> Resume: </h3>
+              <h3 class="d-inline"> <i class="far fa-file-pdf"></i> Resume: </h3><br class="d-md-none">
           <a :href="contact.resumeLink" target="_blank">
           PDF
         </a>
@@ -38,6 +38,7 @@
       </div>
       <div class="col-sm-12 col-md-6 flex-col" data-aos="fade-right" data-aos-duration="1000">
         <form>
+          <h2>Connect With Me</h2>
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Name">
           </div>
@@ -72,7 +73,8 @@ export default {
   data() {
     return {
       contact: data.contact,
-      social: data.contact.social
+      social: data.contact.social,
+      heading: data.main.headings.contact
       }
     }
 }

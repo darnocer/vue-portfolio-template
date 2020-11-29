@@ -15,7 +15,6 @@
   import Typewriter from "typewriter-effect/dist/core";
 
   var titles = data.main.titles;
-  console.log(titles);
 
   export default {
     name: "Banner",

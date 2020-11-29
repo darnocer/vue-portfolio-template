@@ -8,6 +8,10 @@ header {
   -webkit-background-size: cover !important;
   text-align: center;
 
+  a:hover {
+    color: $accent-color;
+  }
+
   .navbar-dark {
     a {
       color: $light-color !important;

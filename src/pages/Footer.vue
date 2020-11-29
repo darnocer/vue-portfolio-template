@@ -22,7 +22,10 @@
   </ul>
 
   <div class="copyright">
-    Copyright © {{ new Date().getFullYear() }} {{text.main.name.fullName}} {{text.footer.copyrightText}}
+    <p>Copyright © {{ new Date().getFullYear() }} {{text.main.name.fullName}}. {{text.footer.copyrightText}}</p>  
+  </div>
+  <div class="credit">
+    <p>Designed with 👽 by <a id="username" href="https:www.github.com/darnocer" alt="Darian's Github">darnocer</a></p>
   </div>
 </footer>
 

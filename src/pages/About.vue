@@ -4,7 +4,7 @@
     class="dark-section"
   >
     <div class="container-fluid">
-      <h1>About Me</h1>
+      <h1>{{heading}}</h1>
       <h2 class="tagline">{{about.tagline}}</h2>
       <div class="row">
         <div class="col-sm-12 col-md-4 flex-col" data-aos="fade-right" data-aos-duration="1000">
@@ -15,21 +15,22 @@
           >
         </div>
         <div class="col-sm-12 col-md-4 flex-col" data-aos="fade-right" data-aos-duration="1000">
-          <p id="about-content">
+          <p id="about-content"><span id="greeting">I'm {{name}}!</span>
             {{about.bio}}
           </p>
-          <a href="#">LINK</a>
+         
         </div>
+        
         <div class="col-sm-12 col-md-4 flex-col" data-aos="fade-right" data-aos-duration="1000">
-          <ul>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
+
+          <ul class="list-group list-group-flush">
+            <li v-for="item in facts" :key="item.name" class="list-group-item"><h3 class="d-inline">{{item.name}}: </h3> <br class="d-md-none">{{item.value}}</li>
+            
           </ul>
         </div>
       </div>
-    </div>
+      </div>
+    
     <Arrow />
   </section>
 </template>
@@ -47,6 +48,9 @@ export default {
   data() {
     return {
       about: data.about,
+      name: data.main.name.firstName,
+      facts: data.about.facts,
+      heading: data.main.headings.about
     };
   },
 };
