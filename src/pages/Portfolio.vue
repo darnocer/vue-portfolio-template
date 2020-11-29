@@ -1,37 +1,36 @@
 <template>
   <section id="portfolio" class="dark-section">
     <div class="container-fluid">
-      <h1>Portfolio</h1>
+      <h1>{{heading}}</h1>
       <div class="row">
         <ul class="list-inline mx-auto filters">
-          <li v-for="item in filters" :key="item" class="list-inline-item filter">
-            <a class="nav-item" href="#">{{item}}</a>
+          <li v-for="item in projects" :key="item.title" class="list-inline-item filter">
+            <a v-if="displayFilters(item)" class="nav-item" :class="(item.filter === currentFilter) ? 'active': null" :data-filter="item.filter" @click="setFilter">{{item.filter}}</a>
           </li>
         </ul>
       </div>
-      
-      <div class="portfolio-container">
-      <div class="row">
-        <div data-aos="fade-right" data-aos-duration="1000" v-for="item in portfolio" :key="item.title" class="col-sm-12 col-md-4 flex-col">
-          <div class="portfolio-item test">
-            <img src="https://via.placeholder.com/150" alt="portfolio item">
+
+      <div class="portfolio-container row">
+        
+        <div data-aos="fade-right" data-aos-duration="1000" v-for="(item, index) in filteredProjects" :key="index"  class="col-sm-12 col-md-4 flex-col">
+          <div class="portfolio-item">
+            
+            <img :src="require(`../assets/images/portfolio/${item.image}`)" />
+            
             <div class="overlay">
+              <a :href="item.link" title="Live Demo" target="_blank">
               <div class="portfolio-item-meta">
                 <h3>{{item.title}}</h3>
+                <h4>{{item.type}}</h4>
                 <p>{{item.description}}</p>
                 
                 <div class="link-icons">
-                  <a :href="item.link" title="Live Demo" target="_blank">
-                    <i class="fa fa-link fa-2x"></i>
-                  </a>
-                    
                   <a :href="item.source" title="Source Code" target="_blank">
                     <i class="fas fa-code fa-2x"></i>
                   </a>
-                  
-                    </div>
               </div>
             </div>
+              </a>
           </div>
         </div>
       </div>
@@ -46,6 +45,8 @@ import data from "../data/data.json";
 import Arrow from "../components/Arrow.vue";
 
 
+var filterArr = [];
+
 export default {
   name: 'portfolio',
   props: {},
@@ -54,10 +55,37 @@ export default {
     },
   data() {
     return {
-      portfolio: data.portfolio.portfolio,
-      filters: data.portfolio.filters
+      projects: data.portfolio.projects,
+      heading: data.main.headings.portfolio,
+      currentFilter: data.portfolio.defaultFilter
       }
-    }
+    },
+    computed: {
+      filteredProjects() {
+        var projects = data.portfolio.projects;
+        var filter = this.currentFilter;
+        var filtered = projects.filter(function(x) {
+          
+            return x.filter === filter;
+          });
+        return filtered;
+      },
+    },
+  methods: {
+    displayFilters(item) {
+      if (!filterArr.includes(item.filter)){
+        filterArr.push(item.filter);
+        return true;
+      }
+      return false;
+    },
+    setFilter(event){
+      this.currentFilter = event.target.dataset.filter;
+      filterArr =[];
+    },
+  
+  }
+   
 }
 </script>
 
