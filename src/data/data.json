@@ -39,59 +39,81 @@
         }
       ]
     },
-    "skills": {
-        "categoryA": 
+    "skills": [
           {
-            "name": "Project Managment",
+            "category": "Project Managment",
             "subtitle": "I know how to get $#!+ done.",
+            "text": "hello world",
             "bullets": ["Healthcare software consultant", "5 years experience managing enterprise software implementations"],
-            "faClass": "fas fa-tasks"
-          },
-        "categoryB": {
-            "name": "Web Development",
-            "subtitle": "Not gonna lie, I like front-end better.",
-            "bullets": ["Graduated from Coding Boot Camp in 2020"],
-            "faClass": "fas fa-terminal"
-          },
-        "categoryC": {
-          "name": "Website Design",
-          "subtitle": "Started on MySpace now I'm here.",
-          "bullets": ["Taught myself HTML/CSS when I was 12","Website designer for The Underdog Foundation"],
-          "faClass": "fas fa-paint-brush"
-        },
-        "categoryD": {
-          "name": "Technical Expertise",
-          "faClass": "fas fa-cogs",
-          "bullets": ["5 years experience supporting end-users", "Technical Lead for The Underdog Foundation"],
-          "subtitle": "I'm like, really good at Googling."
-        },
-        "hardSkills": [
-          {
-            "name": "HTML &bull; CSS",
-            "level": "90"
-          },
-          {
-            "name": "Javascript &bull; jQuery",
-            "level": "70"
-          },
-          {
-            "name": "React.js &bull; Vue.js",
-            "level": "60"
-          },
-          {
-            "name": "SQL &bull; MongoDB",
-            "level": "50"
-          },
-          {
-            "name": "Git &bull; Node.js",
-            "level": "90"
-          }
+            "faClass": "fas fa-tasks",
+            "skillList": [
+              {
+                "name": "1",
+                "level": "90"
+              },
+              {
+                "name": "2",
+                "level": "80"
+              },
+              {
+                "name": "3",
+                "level": "70"
+              }
 
-        ],
-        "skillList": [
-          "HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "React.JS", "Vue.js", "Node.js", "SQL (My SQL)", "NoSQL (MongoDB)", "Git", "Github", "SVN", "Adobe Illustrator", "SquareSpace"
-        ]
-  },
+            ]
+          },
+         {
+            "category": "Web Development",
+            "subtitle": "Not gonna lie, I like front-end better.",
+            "text": "Hello World",
+            "bullets": ["Graduated from Coding Boot Camp in 2020"],
+            "faClass": "fas fa-terminal",
+            "skillList":[
+            {
+              "name": "HTML &bull; CSS",
+              "level": "90"
+            },
+            {
+              "name": "Javascript &bull; jQuery",
+              "level": "70"
+            },
+            {
+              "name": "React.js &bull; Vue.js",
+              "level": "60"
+            },
+            {
+              "name": "SQL &bull; MongoDB",
+              "level": "50"
+            }
+          ]
+          },
+        {
+          "category": "Website Design",
+          "subtitle": "Started on MySpace now I'm here.",
+          "text": "Hello World",
+          "bullets": ["Taught myself HTML/CSS when I was 12","Website designer for The Underdog Foundation"],
+          "faClass": "fas fa-paint-brush",
+          "skillList": [
+            {
+              "name": "GoDaddy &bull; Squarespace",
+              "level": "100"
+            }
+          ]
+        },
+        {
+          "category": "Technical Expertise",
+          "subtitle": "I'm like, really good at Googling.",
+          "text":"Hello World",
+          "bullets": ["5 years experience supporting end-users", "Technical Lead for The Underdog Foundation"],
+          "faClass": "fas fa-cogs",
+          "skillList": [
+            {
+              "name": "Git &bull; Node.js",
+              "level": "100"
+            }
+          ]
+        }    
+    ],
 "portfolio": {
   "defaultFilter": "full-stack",
   "projects": [

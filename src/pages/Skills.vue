@@ -2,66 +2,36 @@
   <section id="skills" class="light-section">
     <div class="container-fluid">
       <h1>{{heading}}</h1>
-      <!-- Row  -->
-      <div class="row">
-        <!-- Start of First Column -->
-        <div class="col-sm-12 col-md-4 flex-col" data-aos="fade-right" data-aos-duration="1000">
-          <!-- First Skill Category  -->
-          <div class="category">
-            <h2><i :class="skills.categoryA.faClass"></i> {{skills.categoryA.name}}</h2>
-            <h3>{{skills.categoryA.subtitle}}</h3>
-            <ul>
-              <li v-for="item in skills.categoryA.bullets" :key="item">{{item}}</li>
-            </ul>
-          </div>
-          <!-- Second Skill Category  -->
-          <div class="category">
-            <h2><i :class="skills.categoryB.faClass"></i> {{skills.categoryB.name}}</h2>
-            <h3>{{skills.categoryB.subtitle}}</h3>
-            <ul>
-              <li v-for="item in skills.categoryB.bullets" :key="item">{{item}}</li>
-            </ul>
-          </div>
-      </div>
-      <!-- End of First Column  -->
 
-      <!-- Start of Second column  -->
-        <div class="col-sm-12 col-md-4 flex-col" data-aos="fade-right" data-aos-duration="1000">
-          <!-- Start of Third Skill Category  -->
-          <div class="category">
-            <h2><i :class="skills.categoryC.faClass"></i> {{skills.categoryC.name}} </h2>
-            <h3>{{skills.categoryC.subtitle}}</h3>
-            <ul>
-              <li v-for="item in skills.categoryC.bullets" :key="item">{{item}}</li>
-            </ul>
+      <!-- start of filters  -->
+      <div class="row filters" data-aos="fade-right" data-aos-duration="1000">
+ 
+          <div v-for="item in skills" :key="item.category" class="col-sm-6 col-md-3 flex-col filter">
+            <button class="btn btn-primary" :class="(item.category === currentCategory) ? 'active': null" :data-category="item.category" @click="setCategory" data-toggle="collapse" :href="'#'+ categoryId(item)" role="button" aria-expanded="false" :aria-controls="categoryId(item)">{{item.category}}</button>
           </div>
-   
-        <!-- Start of Fourth Skill Caetgory  -->
-        <div class="category">
-          <h2><i :class="skills.categoryD.faClass"></i> {{skills.categoryD.name}} </h2>
-          <h3>{{skills.categoryD.subtitle}}</h3>
-          <ul>
-              <li v-for="item in skills.categoryD.bullets" :key="item">{{item}}</li>
-            </ul>
         </div>
-        </div>
-        <!-- End of Second Column  -->
+     
+      <!-- end of filters  -->
 
-<!-- Start of Skill Levels Column  -->
-      <div class="col-sm-12 col-md-4 flex-col skillbars" data-aos="fade-right" data-aos-duration="1000">
-
-         <div class="skill" v-for="item in skills.hardSkills" :key="item.name">
-              <h3 class="skill-name" v-html="item.name"></h3>
+<div id="skill-container">
+  <div data-parent="#skill-container" v-for="item in skills" :key="item.category" class="collapse multi-collapse" :id="categoryId(item)">
+    <div class="category">
+      <h2><i :class="item.faClass"></i> {{item.category}}</h2>
+        <h3>{{item.subtitle}}</h3>
+        <div class="skillbars">
+          <div class="skill" v-for="skill in item.skillList" :key="skill.name" >
+            <h3 class="skill-name" v-html="skill.name"></h3>
               <div class="outer-bar">
-                  <div :class="'inner-bar level--'+ item.level"></div>
+                <div :class="'inner-bar level--'+ skill.level"></div>
               </div>
           </div>
-      </div>
-    <!-- End of Column  -->
+        </div>          
     </div>
-<!-- End of Row  -->
-    </div>
+  </div>
+</div>
+  
     <!-- End of Container  -->
+</div>
     <Arrow />
   </section>
 </template>
@@ -79,9 +49,19 @@ export default {
   data() {
     return {
       skills: data.skills,
-      heading: data.main.headings.skills
+      heading: data.main.headings.skills,
+      currentCategory: null
     };
   },
+  methods: {
+    setCategory(event){
+      this.currentCategory = event.target.dataset.category;
+    },
+    categoryId(item){
+      var str = item.category;
+      return str.toLowerCase().split(" ").join("");
+    }
+  }
 };
 </script>
 

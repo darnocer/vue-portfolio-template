@@ -12,6 +12,9 @@ section {
 
     .flex-col {
       padding: $spacer;
+      &.filter {
+        padding: $spacer-sm 0 !important;
+      }
     }
   }
 
@@ -28,7 +31,7 @@ section {
   background-color: $light-color;
   color: $dark-color;
   a {
-    color: $dark-color;
+    color: $grey-color;
     &:hover {
       color: $accent-color;
     }
@@ -42,6 +45,23 @@ section {
     color: $light-color;
     &:hover {
       color: $accent-color;
+    }
+  }
+}
+
+.filters {
+  margin: 0 auto;
+  max-width: 800px;
+  .active {
+    color: $accent-color;
+  }
+
+  button {
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+
+    &.active {
+      background-color: $accent-color !important;
     }
   }
 }
@@ -74,12 +94,6 @@ section {
     }
   }
 
-  .filters {
-    margin: 0;
-    .active {
-      color: $accent-color;
-    }
-  }
   .portfolio-item {
     position: relative;
 
@@ -151,6 +165,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #skill-container {
+    padding: $spacer;
+    margin: $spacer-sm auto;
+    max-width: 800px;
   }
 }
 

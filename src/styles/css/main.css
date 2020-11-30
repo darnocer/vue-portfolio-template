@@ -117,6 +117,8 @@ section {
     margin: 6rem auto; }
     section .container-fluid .flex-col {
       padding: 2rem; }
+      section .container-fluid .flex-col.filter {
+        padding: 1rem 0 !important; }
   section h1 {
     padding-bottom: 2rem; }
   section .list-group-item {
@@ -126,7 +128,7 @@ section {
   background-color: #f0f0f0;
   color: #333333; }
   .light-section a {
-    color: #333333; }
+    color: #747474; }
     .light-section a:hover {
       color: #2ecc71; }
 
@@ -137,6 +139,17 @@ section {
     color: #f0f0f0; }
     .dark-section a:hover {
       color: #2ecc71; }
+
+.filters {
+  margin: 0 auto;
+  max-width: 800px; }
+  .filters .active {
+    color: #2ecc71; }
+  .filters button {
+    text-transform: uppercase;
+    font-size: 0.8rem; }
+    .filters button.active {
+      background-color: #2ecc71 !important; }
 
 #about .profile-pic {
   max-width: 100%;
@@ -156,11 +169,6 @@ section {
 
 #portfolio .portfolio-container .flex-col {
   padding: 2rem; }
-
-#portfolio .filters {
-  margin: 0; }
-  #portfolio .filters .active {
-    color: #2ecc71; }
 
 #portfolio .portfolio-item {
   position: relative; }
@@ -207,6 +215,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  #skills #skill-container {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px; }
 
 .category {
   height: 50%;
