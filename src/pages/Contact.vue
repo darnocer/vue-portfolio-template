@@ -37,19 +37,25 @@
 
       </div>
       <div class="col-sm-12 col-md-6 flex-col" data-aos="fade-right" data-aos-duration="1000">
-        <form>
-          <h2>Connect With Me</h2>
+        <h2>Connect With Me</h2>
+<!-- 
+        <form method="POST" target="_blank">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Name">
+            <input type="text" name="name" class="form-control" placeholder="Name">
           </div>
           <div class="form-group">
-            <input  id="exampleInputEmail1" type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email">
+            <input type="email" name="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email">
           </div>
           <div class="form-group">
-            <textarea id="exampleFormControlTextarea1" class="form-control" rows="3" placeholder="Message"></textarea>
+            <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </form> -->
+
+        <div class="inbound-form-wrapper" id="form_4095" data-path="https://app.99inbound.com/i/eca66ce0-b392-4bc1-8247-13a69c26139a" data-token="INp921C8buNbYYUrvGBhrwtt"></div>
+
+
+
       </div>
     </div>
   </div>
@@ -79,6 +85,8 @@ export default {
     }
 }
 </script>
+
+
 
 <style lang="scss">
 @import "../styles/scss/_variables.scss";
