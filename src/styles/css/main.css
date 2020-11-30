@@ -160,70 +160,11 @@ section {
   text-align: justify;
   font-size: 1 1rem; }
 
-#portfolio .container-fluid {
-  margin: 4rem auto; }
-
-#portfolio .portfolio-item {
-  position: relative; }
-  #portfolio .portfolio-item a {
-    text-decoration: none; }
-  #portfolio .portfolio-item h3 {
-    font-size: 1.2rem; }
-  #portfolio .portfolio-item img {
-    width: 100%;
-    display: block; }
-  #portfolio .portfolio-item .overlay {
-    position: absolute;
-    padding: inherit;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: #333333; }
-    #portfolio .portfolio-item .overlay .portfolio-item-meta {
-      color: #f0f0f0;
-      padding: 2rem; }
-      #portfolio .portfolio-item .overlay .portfolio-item-meta i {
-        margin: 1rem; }
-  #portfolio .portfolio-item:hover .overlay {
-    opacity: 0.95;
-    border: 2px solid #2ecc71;
-    cursor: pointer; }
-
-#contact .social-item {
-  padding: 0 0.5rem; }
-
-#contact ul {
-  margin-top: 2rem; }
-
-#skills {
-  padding: 1rem; }
-  #skills .flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  #skills #skill-container {
-    margin: 1rem auto;
-    max-width: 700px; }
-    #skills #skill-container .skill-description {
-      margin: 2rem auto;
-      padding: 1rem; }
-
-#about .profile-pic {
-  max-width: 100%;
-  max-height: 300px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-#about .tagline {
-  font-size: 1.5rem; }
-
-#about #about-content {
-  text-align: justify;
-  font-size: 1 1rem; }
+#skills #skill-container {
+  margin: 2rem auto;
+  max-width: 600px; }
+  #skills #skill-container .skill-content {
+    margin-top: 1rem; }
 
 #portfolio .container-fluid {
   margin: 4rem auto; }
@@ -263,24 +204,6 @@ section {
 
 #contact ul {
   margin-top: 2rem; }
-
-#skills {
-  padding: 1rem; }
-  #skills .flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  #skills #skill-container {
-    margin: 1rem auto;
-    max-width: 700px; }
-    #skills #skill-container .skill-description {
-      margin: 2rem auto;
-      padding: 1rem; }
-
-.category {
-  height: 50%;
-  width: 100%;
-  margin-top: 1rem; }
 
 .skillbars {
   display: flex;

@@ -35,7 +35,54 @@
         }
       ]
     },
-    "skills": [
+    "skills": {
+    "defaultCategory": "Web Development",
+    "categories": [
+      {
+        "category": "Web Development",
+        "subtitle": "Not gonna lie, I like front-end better.",
+        "bullets": [],
+        "faClass": "fas fa-terminal",
+        "skillList":[
+          {
+            "name": "HTML &bull; CSS &bull; Bootstrap",
+            "level": "90"
+          },
+          {
+            "name": "Javascript &bull; jQuery",
+            "level": "70"
+          },
+          {
+            "name": "React.js &bull; Vue.js",
+            "level": "60"
+          },
+          {
+            "name": "SQL &bull; MongoDB",
+            "level": "50"
+          }
+        ]
+      },
+
+      {
+        "category": "Website Design",
+        "subtitle": "Started on MySpace now I'm here.",
+        "bullets": [],
+        "faClass": "fas fa-paint-brush",
+        "skillList": [
+          {
+            "name": "Content Writing",
+            "level": "80"
+          },
+          {
+            "name": "Squarespace &bull; GoDaddy",
+            "level": "100"
+          },
+          {
+            "name": "Adobe Illustrator &bull; Photoshop",
+            "level": "70"
+          }
+        ]
+      },
           {
             "category": "Project Managment",
             "subtitle": "I know how to get $#!+ done.",
@@ -43,50 +90,8 @@
             "faClass": "fas fa-tasks",
             "skillList": []
           },
-         {
-            "category": "Web Development",
-            "subtitle": "Not gonna lie, I like front-end better.",
-            "bullets": [],
-            "faClass": "fas fa-terminal",
-            "skillList":[
-            {
-              "name": "HTML &bull; CSS &bull; Bootstrap",
-              "level": "90"
-            },
-            {
-              "name": "Javascript &bull; jQuery",
-              "level": "70"
-            },
-            {
-              "name": "React.js &bull; Vue.js",
-              "level": "60"
-            },
-            {
-              "name": "SQL &bull; MongoDB",
-              "level": "50"
-            }
-          ]
-          },
-        {
-          "category": "Website Design",
-          "subtitle": "Started on MySpace now I'm here.",
-          "bullets": [],
-          "faClass": "fas fa-paint-brush",
-          "skillList": [
-            {
-              "name": "Content Writing",
-              "level": "80"
-            },
-            {
-              "name": "Squarespace &bull; GoDaddy",
-              "level": "100"
-            },
-            {
-              "name": "Adobe Illustrator &bull; Photoshop",
-              "level": "70"
-            }
-          ]
-        },
+          
+        
         {
           "category": "Technical Expertise",
           "subtitle": "I'm like, really good at Googling.",
@@ -108,7 +113,8 @@
             }
           ]
         }    
-    ],
+    ]
+  },
 "portfolio": {
   "defaultFilter": "full-stack",
   "projects": [

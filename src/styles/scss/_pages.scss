@@ -1,3 +1,4 @@
+// styling specifc to the #about section
 #about {
   .profile-pic {
     max-width: 100%;
@@ -16,6 +17,18 @@
   }
 }
 
+// styling specific to the #skills section
+#skills {
+  #skill-container {
+    margin: $spacer auto;
+    max-width: 600px;
+    .skill-content {
+      margin-top: $spacer-sm;
+    }
+  }
+}
+
+// styling specific to the portfolio section
 #portfolio {
   .container-fluid {
     margin: 4rem auto;
@@ -69,6 +82,7 @@
   }
 }
 
+// styling specific to the #contact section
 #contact {
   .social-item {
     padding: 0 0.5rem;
@@ -76,128 +90,5 @@
 
   ul {
     margin-top: $spacer;
-  }
-}
-
-#skills {
-  padding: $spacer-sm;
-
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #skill-container {
-    // padding: $spacer-sm;
-    margin: $spacer-sm auto;
-    max-width: 700px;
-
-    .skill-description {
-      margin: $spacer auto;
-      padding: $spacer-sm;
-    }
-  }
-}
-
-#about {
-  .profile-pic {
-    max-width: 100%;
-    max-height: $profile-pic-height;
-    border-radius: 50%;
-    box-shadow: $profile-pic-shadow;
-  }
-
-  .tagline {
-    font-size: 1.5rem;
-  }
-
-  #about-content {
-    text-align: justify;
-    font-size: 1$spacer-sm;
-  }
-}
-
-#portfolio {
-  .container-fluid {
-    margin: 4rem auto;
-  }
-
-  .portfolio-item {
-    position: relative;
-
-    a {
-      text-decoration: none;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-    }
-
-    img {
-      width: 100%;
-      display: block;
-    }
-
-    .overlay {
-      position: absolute;
-      padding: inherit;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      opacity: 0;
-      transition: 0.5s ease;
-      background-color: #333333;
-
-      .portfolio-item-meta {
-        color: $light-color;
-        padding: 2rem;
-
-        i {
-          margin: $spacer-sm;
-        }
-      }
-    }
-
-    &:hover {
-      .overlay {
-        opacity: 0.95;
-        border: 2px solid $accent-color;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-#contact {
-  .social-item {
-    padding: 0 0.5rem;
-  }
-
-  ul {
-    margin-top: $spacer;
-  }
-}
-
-#skills {
-  padding: $spacer-sm;
-
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #skill-container {
-    // padding: $spacer-sm;
-    margin: $spacer-sm auto;
-    max-width: 700px;
-
-    .skill-description {
-      margin: $spacer auto;
-      padding: $spacer-sm;
-    }
   }
 }
