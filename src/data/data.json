@@ -28,9 +28,6 @@
         {"name": "Alma Mater",
         "value": "Penn State University"
         },
-        {"name": "Degree",
-          "value": "Biomedical Engineering"
-          },
         {"name": "Sun Sign",
         "value": "Aquarius"
         },
@@ -43,34 +40,18 @@
           {
             "category": "Project Managment",
             "subtitle": "I know how to get $#!+ done.",
-            "text": "hello world",
-            "bullets": ["Healthcare software consultant", "5 years experience managing enterprise software implementations"],
+            "bullets": ["I have 5 years experience managing enterprise software implementations in the Healthcare technology industry.", "I am the Technical Lead for The Underdog Foundation"],
             "faClass": "fas fa-tasks",
-            "skillList": [
-              {
-                "name": "1",
-                "level": "90"
-              },
-              {
-                "name": "2",
-                "level": "80"
-              },
-              {
-                "name": "3",
-                "level": "70"
-              }
-
-            ]
+            "skillList": []
           },
          {
             "category": "Web Development",
             "subtitle": "Not gonna lie, I like front-end better.",
-            "text": "Hello World",
-            "bullets": ["Graduated from Coding Boot Camp in 2020"],
+            "bullets": [],
             "faClass": "fas fa-terminal",
             "skillList":[
             {
-              "name": "HTML &bull; CSS",
+              "name": "HTML &bull; CSS &bull; Bootstrap",
               "level": "90"
             },
             {
@@ -90,13 +71,20 @@
         {
           "category": "Website Design",
           "subtitle": "Started on MySpace now I'm here.",
-          "text": "Hello World",
-          "bullets": ["Taught myself HTML/CSS when I was 12","Website designer for The Underdog Foundation"],
+          "bullets": [],
           "faClass": "fas fa-paint-brush",
           "skillList": [
             {
-              "name": "GoDaddy &bull; Squarespace",
+              "name": "Content Writing",
+              "level": "80"
+            },
+            {
+              "name": "Squarespace &bull; GoDaddy",
               "level": "100"
+            },
+            {
+              "name": "Adobe Illustrator &bull; Photoshop",
+              "level": "70"
             }
           ]
         },
@@ -104,11 +92,19 @@
           "category": "Technical Expertise",
           "subtitle": "I'm like, really good at Googling.",
           "text":"Hello World",
-          "bullets": ["5 years experience supporting end-users", "Technical Lead for The Underdog Foundation"],
+          "bullets": [],
           "faClass": "fas fa-cogs",
           "skillList": [
             {
               "name": "Git &bull; Node.js",
+              "level": "100"
+            },
+            {
+              "name": "Microsoft Suite",
+              "level": "100"
+            },
+            {
+              "name": "Troubleshooting &bull; Debugging",
               "level": "100"
             }
           ]
@@ -170,6 +166,22 @@
       "link": "https://darnocer.github.io/Web-APIs-Code-Quiz/",
       "source": "https://github.com/darnocer/Web-APIs-Code-Quiz",
       "filter": "front-end"
+    },
+    {
+      "title": "The Underdog Foundation",
+      "description": "Website for The Underdog Foundation, a 501(c)(3) non-profit organization.",
+      "type": "Individual",
+      "image": "theunderdogfoundation.png",
+      "link": "https://www.theunderdogfoundation.org",
+      "filter": "design"
+    },
+    {
+      "title": "Genna Rae's Wings & More",
+      "description": "Website for Genna Rae's Wings",
+      "type": "Individual",
+      "image": "gennaraeswings.png",
+      "link": "https://www.gennaraeswings.com",
+      "filter": "design"
     }
 
   ]
