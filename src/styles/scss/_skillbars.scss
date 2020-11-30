@@ -1,0 +1,92 @@
+.category {
+  height: 50%;
+  width: 100%;
+  margin-top: $spacer-sm;
+}
+
+.skillbars {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  margin: 0.8rem 0;
+  position: relative;
+  width: 22.5em;
+}
+
+.skill-name {
+  font-size: 0.8em;
+  letter-spacing: 0.145em;
+  text-transform: uppercase;
+}
+
+.outer-bar,
+.inner-bar {
+  height: 0.75em;
+}
+
+.outer-bar {
+  margin-top: 1em;
+  background: #333;
+}
+
+.inner-bar {
+  animation: fillBar 1s forwards;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.level--100,
+.level--90 {
+  width: 100%;
+  background: $level-high-1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    $level-high-2,
+    $level-high-1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $level-high-2, $level-high-1);
+}
+
+.level--90 {
+  width: 90%;
+}
+
+.level--80,
+.level--70 {
+  width: 80%;
+  background: $level-medium-1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    $level-medium-2,
+    $level-medium-1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $level-medium-2, $level-medium-1);
+}
+.level--70 {
+  width: 70%;
+}
+.level--60,
+.level--50 {
+  width: 60%;
+  background: $level-low-1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    $level-low-2,
+    $level-low-1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $level-low-2, $level-low-1);
+}
+.level--50 {
+  width: 50%;
+}
+
+@keyframes fillBar {
+  to {
+    transform: scaleX(1);
+  }
+}

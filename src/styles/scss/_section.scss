@@ -8,13 +8,10 @@ section {
 
   .container-fluid {
     padding: $spacer-sm;
-    margin: 6rem auto;
+    margin: $spacer-lg auto;
 
     .flex-col {
       padding: $spacer;
-      &.filter {
-        padding: $spacer-sm 0 !important;
-      }
     }
   }
 
@@ -30,6 +27,7 @@ section {
 .light-section {
   background-color: $light-color;
   color: $dark-color;
+
   a {
     color: $grey-color;
     &:hover {
@@ -50,222 +48,15 @@ section {
 }
 
 .filters {
-  margin: 0 auto;
-  max-width: 800px;
+  a {
+    padding: 2rem;
+  }
+
+  .filter {
+    margin: 0 auto;
+  }
+
   .active {
     color: $accent-color;
-  }
-
-  button {
-    text-transform: uppercase;
-    font-size: $font-size-sm;
-
-    &.active {
-      background-color: $accent-color !important;
-    }
-  }
-}
-
-#about {
-  .profile-pic {
-    max-width: 100%;
-    max-height: $profile-pic-height;
-    border-radius: 50%;
-    box-shadow: $profile-pic-shadow;
-  }
-
-  .tagline {
-    font-size: 1.5rem;
-  }
-
-  #about-content {
-    text-align: justify;
-    font-size: 1$spacer-sm;
-  }
-}
-
-#portfolio {
-  .container-fluid {
-    margin: 4rem auto;
-  }
-  .portfolio-container {
-    .flex-col {
-      padding: $spacer;
-    }
-  }
-
-  .portfolio-item {
-    position: relative;
-
-    a {
-      text-decoration: none;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-    }
-
-    img {
-      width: 100%;
-      display: block;
-    }
-
-    .overlay {
-      position: absolute;
-      padding: inherit;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      opacity: 0;
-      transition: 0.5s ease;
-      background-color: #333333;
-
-      .portfolio-item-meta {
-        color: $light-color;
-        padding: 2rem;
-
-        i {
-          margin: $spacer-sm;
-        }
-      }
-    }
-
-    &:hover {
-      .overlay {
-        opacity: 0.95;
-        border: 2px solid $accent-color;
-        cursor: pointer;
-      }
-    }
-  }
-
-  .list-inline {
-    a {
-      padding: 2rem;
-    }
-  }
-}
-
-#contact {
-  .social-item {
-    padding: 0 0.5rem;
-  }
-
-  ul {
-    margin-top: $spacer;
-  }
-}
-
-#skills {
-  padding: $spacer-sm;
-
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #skill-container {
-    padding: $spacer;
-    margin: $spacer-sm auto;
-    max-width: 800px;
-  }
-}
-
-.category {
-  height: 50%;
-  width: 100%;
-  margin-top: $spacer-sm;
-  li {
-    list-style-type: square;
-  }
-}
-
-.skillbars {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill {
-  margin: 0.8rem 0;
-  position: relative;
-  width: 22.5em;
-}
-
-.skill-name {
-  font-size: 0.8em;
-  letter-spacing: 0.145em;
-  text-transform: uppercase;
-}
-
-.outer-bar,
-.inner-bar {
-  height: 0.75em;
-}
-
-.outer-bar {
-  margin-top: 1em;
-  background: #333;
-}
-
-.inner-bar {
-  animation: fillBar 1s forwards;
-  transform: scaleX(0);
-  transform-origin: 0 0;
-}
-
-.level--100,
-.level--90 {
-  width: 100%;
-  background: $level-high-1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    $level-high-2,
-    $level-high-1
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, $level-high-2, $level-high-1);
-}
-
-.level--90 {
-  width: 90%;
-}
-
-.level--80,
-.level--70 {
-  width: 80%;
-  background: $level-medium-1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    $level-medium-2,
-    $level-medium-1
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, $level-medium-2, $level-medium-1);
-}
-.level--70 {
-  width: 70%;
-}
-.level--60,
-.level--50 {
-  width: 60%;
-  background: $level-low-1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    $level-low-2,
-    $level-low-1
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, $level-low-2, $level-low-1);
-}
-.level--50 {
-  width: 50%;
-}
-
-@keyframes fillBar {
-  to {
-    transform: scaleX(1);
   }
 }
