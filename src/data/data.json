@@ -41,8 +41,9 @@
       {
         "category": "Web Development",
         "subtitle": "Not gonna lie, I like front-end better.",
-        "bullets": [],
         "faClass": "fas fa-terminal",
+        "bullets": [],
+        
         "skillList":[
           {
             "name": "HTML &bull; CSS &bull; Bootstrap",
