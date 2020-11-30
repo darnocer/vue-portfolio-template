@@ -2,8 +2,7 @@
   "main": {
     "name": {
         "firstName": "Darian",
-        "lastName": "Nocera",
-        "fullName": "Darian Nocera"
+        "lastName": "Nocera"
     },
     "titles": [
         "Web Designer.",
@@ -19,7 +18,7 @@
     }
   },
     "about": {
-      "bio": "I have always taken an interest in programming & design - I enjoy the systematic approach to problem-solving coupled with the abstract creative self-expression. After completing a coding boot camp in 2020, I finally felt the confidence to pursue development & design head on. When I'm not coding, you can find me camping, hiking, mountain biking, practicing yoga, writing, reading, tending to my plants, or traveling.",
+      "bio": "I have always taken an interest in programming & design— I enjoy the systematic approach to problem-solving coupled with the abstract creative self-expression. After completing a coding boot camp in 2020, I finally felt the confidence to pursue development & design head on. When I'm not coding, you can find me camping, hiking, mountain biking, practicing yoga, writing, reading, tending to my plants, or traveling.",
       "tagline": "",
       "facts": [
         {"name": "Hometown",

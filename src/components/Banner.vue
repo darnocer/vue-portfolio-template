@@ -3,7 +3,7 @@
   <div class="banner">
     <div class="banner-text">
       <h1 class="display-text">
-        {{ name.fullName }}
+        {{ name.firstName }} {{ name.lastName }}
       </h1>
       <h2 id="typewriter"></h2>
     </div>
