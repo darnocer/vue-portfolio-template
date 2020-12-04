@@ -5,6 +5,11 @@
       <h1>{{heading}}</h1>
       <div class="row">
         <div class="col-sm-12 col-md-6 flex-col" data-aos="fade-right" data-aos-duration="1000">
+          <div class="contact-content">
+            <h2>Connect with Me</h2>
+          <div class="contact-text">{{contact.text}} </div>
+
+          <div class="contact-info">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h3 class="d-inline"><i class="fas fa-map-marker-alt"></i> Location: </h3><br class="d-md-none">
@@ -33,11 +38,17 @@
           PDF
         </a>
         </li>
+        <li class="list-group-item">
+          <h3 class="d-inline"><i class="fas fa-hand-holding-heart"></i> SUPPORT: </h3>
+          <a href="www.theunderdogfoundation.org" target="_blank">The Underdog Foundation</a>
+          </li>
         </ul>
+        </div>
+        </div>
 
       </div>
       <div class="col-sm-12 col-md-6 flex-col" data-aos="fade-right" data-aos-duration="1000">
-        <h2>Connect With Me</h2>
+        <h2>Send Me A Message</h2>
 <!-- 
         <form method="POST" target="_blank">
           <div class="form-group">
@@ -52,7 +63,7 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </form> -->
 
-        <div class="inbound-form-wrapper" id="form_4095" data-path="https://app.99inbound.com/i/eca66ce0-b392-4bc1-8247-13a69c26139a" data-token="INp921C8buNbYYUrvGBhrwtt"></div>
+        <div style="height: 60%; width:90%; margin: 0 auto;" class="inbound-form-wrapper" id="form_4095" data-path="https://app.99inbound.com/i/eca66ce0-b392-4bc1-8247-13a69c26139a" data-token="INp921C8buNbYYUrvGBhrwtt"></div>
 
 
 

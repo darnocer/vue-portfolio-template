@@ -3,7 +3,7 @@
     <Header />
     <About />
     <Skills />
-    <portfolio />
+    <Portfolio />
     <Contact />
     <Footer />
   </div>
@@ -13,7 +13,7 @@
 import Header from "./pages/Header.vue";
 import About from "./pages/About.vue";
 import Skills from "./pages/Skills.vue";
-import portfolio from "./pages/Portfolio.vue";
+import Portfolio from "./pages/Portfolio.vue";
 import Contact from "./pages/Contact.vue";
 import Footer from "./pages/Footer.vue";
 
@@ -24,7 +24,7 @@ export default {
     Header,
     About,
     Skills,
-    portfolio,
+    Portfolio,
     Contact,
     Footer
 }

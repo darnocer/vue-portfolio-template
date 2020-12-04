@@ -15,8 +15,9 @@
           >
         </div>
         <div class="col-sm-12 col-md-4 flex-col" data-aos="fade-right" data-aos-duration="1000">
-          <p id="about-content"><span id="greeting">I'm {{name}}!</span>
-            {{about.bio}}
+          <p id="about-content"><span id="greeting">I'm {{name}}! </span>
+          <span id="bio" v-html="about.bio"></span>
+            
           </p>
          
         </div>
@@ -39,10 +40,12 @@
 import data from "../data/data.json";
 import Arrow from "../components/Arrow.vue";
 
+
 export default {
   name: "About",
   components: {
     Arrow,
+  
   },
   props: {},
   data() {

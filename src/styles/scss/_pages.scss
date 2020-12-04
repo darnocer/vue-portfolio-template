@@ -13,7 +13,7 @@
 
   #about-content {
     text-align: justify;
-    font-size: 1$spacer-sm;
+    font-size: $spacer-sm;
   }
 }
 
@@ -21,6 +21,7 @@
 #skills {
   #skill-container {
     margin: $spacer auto;
+    padding: 0;
     max-width: 600px;
     .skill-content {
       margin-top: $spacer-sm;
@@ -55,19 +56,25 @@
       padding: inherit;
       top: 0;
       bottom: 0;
-      left: 0;
-      right: 0;
+      // left: 0;
+      // right: 0;
       width: 100%;
       opacity: 0;
       transition: 0.5s ease;
       background-color: #333333;
 
-      .portfolio-item-meta {
+      .portfolio-item-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
         color: $light-color;
-        padding: 2rem;
+        padding: $spacer;
+        margin: 0 auto;
+        vertical-align: middle;
 
         i {
-          margin: $spacer-sm;
+          // margin: $spacer-sm;
         }
       }
     }
@@ -75,7 +82,6 @@
     &:hover {
       .overlay {
         opacity: 0.95;
-        border: 2px solid $accent-color;
         cursor: pointer;
       }
     }
@@ -90,5 +96,13 @@
 
   ul {
     margin-top: $spacer;
+  }
+
+  .contact-content {
+    padding: $spacer;
+  }
+
+  .container-fluid {
+    margin: 1.5rem auto;
   }
 }

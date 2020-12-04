@@ -7,8 +7,7 @@
     "titles": [
         "Web Designer.",
         "Web Developer.",
-        "Technical Expert.",
-        "Eccentric Weirdo."
+        "Technical Expert."
     ],
     "headings": {
       "about": "About Ya Gurl",
@@ -18,7 +17,7 @@
     }
   },
     "about": {
-      "bio": "I have always taken an interest in programming & design— I enjoy the systematic approach to problem-solving coupled with the abstract creative self-expression. After completing a coding boot camp in 2020, I finally felt the confidence to pursue development & design head on. When I'm not coding, you can find me camping, hiking, mountain biking, practicing yoga, writing, reading, tending to my plants, or traveling.",
+      "bio": "I like to question ideas & challenge the norm. I have always taken an interest in programming & design— I enjoy the systematic approach to problem-solving coupled with the abstract creativity.  When I'm not coding, you can find me camping, hiking, mountain biking, practicing yoga, writing, reading, tending to my plants, or traveling.",
       "tagline": "",
       "facts": [
         {"name": "Hometown",
@@ -37,18 +36,51 @@
     },
     "skills": {
     "defaultCategory": "Web Development",
+    "timeline": [
+      {
+        "title": "Background",
+        "faClass": "fas fa-graduation-cap",
+        "text": "I was awarded 2 research grants for my undergrad lab work with conducting polymers. I completed a Pharmaceutical R&D Internship at the company that makes Tylenol. I graduated from Penn State University in 2015 with a <b> B.S. in Biomedical Engineering.</b>",
+        "subtitle": "Welp, plans have changed."
+      },
+      {
+        "title": "Professional Experience",
+        "faClass": "fas fa-briefcase",
+        "text": "I started out as a Quality Assurance Specialist at a top <b>software company</b> in the electronic health record industry. I then transitioned to be a <b>project manager</b> for the software implementations, leading small teams to success. I am currently a consultant that assists with post-live optimization & support of the system.",
+        "subtitle": "TLDR; I know how to get $#!+ done."
+      },
+      {
+      "title": "Web Development",
+      "faClass": "fas fa-code",
+      "text": "After taking several computer science classes in college, and teaching myself pieces of various languages throughout the years, I decided to get serious about becoming a web developer. In 2020, I graduated a <b>Full Stack Web Development Boot Camp</b>. I am continuing to work on personal projects, solidify concepts, & learn new technologies. ",
+      "subtitle": "I'm on a mission to master the front-end."
+      },
+      {
+        "title": "Web Design",
+        "faClass": "fas fa-magic",
+        "text": "In 2020, I joined The Underdog Foundation as the <b>Vice President & Technical Lead</b>. Through this cause, I have had the pleasure to donate my time to designing websites for small, local businesses impacted by the COVID-19 pandemic. I continue to look for opportunities where I can bring my knowledge of development, content writing, UI/UX design, responsive design, SEO, and more.",
+        "subtitle": "Learned HTML/CSS on MySpace, now I'm here"
+      }
+      
+
+    ],
     "categories": [
       {
         "category": "Web Development",
-        "subtitle": "Not gonna lie, I like front-end better.",
+        "subtitle": "I'm on a mission to master the front-end.",
         "faClass": "fas fa-terminal",
         "bullets": [],
         
         "skillList":[
           {
+            "name": "Git &bull; Node.js",
+            "level": "100"
+          },
+          {
             "name": "HTML &bull; CSS &bull; Bootstrap",
             "level": "90"
           },
+          
           {
             "name": "Javascript &bull; jQuery",
             "level": "70"
@@ -71,25 +103,47 @@
         "faClass": "fas fa-paint-brush",
         "skillList": [
           {
-            "name": "Content Writing",
-            "level": "80"
-          },
-          {
             "name": "Squarespace &bull; GoDaddy",
             "level": "100"
           },
           {
+            "name": "Content Writing",
+            "level": "80"
+          },
+          {
             "name": "Adobe Illustrator &bull; Photoshop",
-            "level": "70"
+            "level": "60"
+          },
+          {
+            "name": "SEO",
+            "level": "60"
           }
+
         ]
       },
           {
             "category": "Project Managment",
             "subtitle": "I know how to get $#!+ done.",
-            "bullets": ["I have 5 years experience managing enterprise software implementations in the Healthcare technology industry.", "I am the Technical Lead for The Underdog Foundation"],
+            "bullets": [],
             "faClass": "fas fa-tasks",
-            "skillList": []
+            "skillList": [
+              {
+                "name": "Meeting Deadlines",
+                "level": "100"
+              },
+              {
+                "name": "Task Management &bull; Time Management",
+                "level": "100"
+              },
+              {
+                "name": "Leading Small Teams",
+                "level": "100"
+              },
+              {
+                "name": "Communication",
+                "level": "100"
+              }
+            ]
           },
           
         
@@ -101,15 +155,19 @@
           "faClass": "fas fa-cogs",
           "skillList": [
             {
-              "name": "Git &bull; Node.js",
+              "name": "Quality Assurance",
               "level": "100"
             },
             {
-              "name": "Microsoft Suite",
+              "name": "Microsoft Suite &bull; G-Suite",
               "level": "100"
             },
             {
               "name": "Troubleshooting &bull; Debugging",
+              "level": "100"
+            },
+            {
+              "name": "Technical Support",
               "level": "100"
             }
           ]
@@ -193,9 +251,11 @@
   ]
 },
     "contact":{
+      "text": "If you have any feedback, ideas, or opportunities for me, or if you just wanna say wazzup, email me or message me on LinkedIn.",
       "city": "Denver, Colorado",
       "email": "hello@dariannocera.com",
-      "resumeLink": "#",
+      "resumeLink": "https://drive.google.com/file/d/1ZoQWPtsZqrEQOVh3a8kiyyR3wDog7IqP/view",
+      
       "social": [
           {
             "name": "linkedin",

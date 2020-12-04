@@ -1,7 +1,7 @@
 <template>
 <header  id="home" class="bg">
   <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark">
-    <a class="navbar-brand" href="#">dariannocera.</a>
+    <a class="navbar-brand" href="#">darian<span class="name">nocera.</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,7 +10,7 @@
         <li class="active"><a class="nav-item nav-link" href="#home">Home</a></li>
         <li><a class="nav-item nav-link" href="#about">About</a></li>
         <li><a class="nav-item nav-link" href="#skills">Skills</a></li>
-        <li><a class="nav-item nav-link" href="#portfolio">portfolio</a></li>
+        <li><a class="nav-item nav-link" href="#portfolio">Portfolio</a></li>
         <li><a class="nav-item nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
