@@ -107,9 +107,9 @@ header {
     header .banner .banner-text {
       color: #f0f0f0; }
       header .banner .banner-text .display-text {
-        font-size: 7rem; }
+        font-size: 6rem; }
       header .banner .banner-text #typewriter {
-        font-size: 3rem;
+        font-size: 2.4rem;
         color: inherit;
         text-transform: none; }
 
@@ -198,6 +198,7 @@ section {
   margin: 4rem auto; }
 
 #portfolio .portfolio-item {
+  box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative; }
   #portfolio .portfolio-item a {
     text-decoration: none; }
