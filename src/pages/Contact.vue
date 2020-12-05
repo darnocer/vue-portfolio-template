@@ -40,7 +40,7 @@
         </li>
         <li class="list-group-item">
           <h3 class="d-inline"><i class="fas fa-hand-holding-heart"></i> SUPPORT: </h3>
-          <a href="www.theunderdogfoundation.org" target="_blank">The Underdog Foundation</a>
+          <a href="http://www.theunderdogfoundation.org" target="_blank">The Underdog Foundation</a>
           </li>
         </ul>
         </div>
