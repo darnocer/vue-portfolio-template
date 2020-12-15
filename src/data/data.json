@@ -18,7 +18,6 @@
   },
     "about": {
       "bio": "I like to question ideas & challenge the norm. I have always taken an interest in programming & design— I enjoy the systematic approach to problem-solving coupled with the abstract creativity.  When I'm not coding, you can find me camping, hiking, mountain biking, practicing yoga, writing, reading, tending to my plants, or traveling.",
-      "tagline": "",
       "facts": [
         {"name": "Hometown",
         "value": "Pittsburgh, PA"
@@ -36,41 +35,12 @@
     },
     "skills": {
     "defaultCategory": "Web Development",
-    "timeline": [
-      {
-        "title": "Background",
-        "faClass": "fas fa-graduation-cap",
-        "text": "I was awarded 2 research grants for my undergrad lab work with conducting polymers. I completed a Pharmaceutical R&D Internship at the company that makes Tylenol. I graduated from Penn State University in 2015 with a <b> B.S. in Biomedical Engineering.</b>",
-        "subtitle": "Welp, plans have changed."
-      },
-      {
-        "title": "Professional Experience",
-        "faClass": "fas fa-briefcase",
-        "text": "I started out as a Quality Assurance Specialist at a top <b>software company</b> in the electronic health record industry. I then transitioned to be a <b>project manager</b> for the software implementations, leading small teams to success. I am currently a consultant that assists with post-live optimization & support of the system.",
-        "subtitle": "TLDR; I know how to get $#!+ done."
-      },
-      {
-      "title": "Web Development",
-      "faClass": "fas fa-code",
-      "text": "After taking several computer science classes in college, and teaching myself pieces of various languages throughout the years, I decided to get serious about becoming a web developer. In 2020, I graduated a <b>Full Stack Web Development Boot Camp</b>. I am continuing to work on personal projects, solidify concepts, & learn new technologies. ",
-      "subtitle": "I'm on a mission to master the front-end."
-      },
-      {
-        "title": "Web Design",
-        "faClass": "fas fa-magic",
-        "text": "In 2020, I joined The Underdog Foundation as the <b>Vice President & Technical Lead</b>. Through this cause, I have had the pleasure to donate my time to designing websites for small, local businesses impacted by the COVID-19 pandemic. I continue to look for opportunities where I can bring my knowledge of development, content writing, UI/UX design, responsive design, SEO, and more.",
-        "subtitle": "Learned HTML/CSS on MySpace, now I'm here"
-      }
-      
-
-    ],
+    
     "categories": [
       {
         "category": "Web Development",
         "subtitle": "I'm on a mission to master the front-end.",
-        "faClass": "fas fa-terminal",
-        "bullets": [],
-        
+        "faClass": "fas fa-terminal",        
         "skillList":[
           {
             "name": "Git &bull; Node.js",
@@ -99,7 +69,6 @@
       {
         "category": "Website Design",
         "subtitle": "Started on MySpace now I'm here.",
-        "bullets": [],
         "faClass": "fas fa-paint-brush",
         "skillList": [
           {
@@ -124,7 +93,6 @@
           {
             "category": "Project Managment",
             "subtitle": "I know how to get $#!+ done.",
-            "bullets": [],
             "faClass": "fas fa-tasks",
             "skillList": [
               {
@@ -151,7 +119,6 @@
           "category": "Technical Expertise",
           "subtitle": "I'm like, really good at Googling.",
           "text":"Hello World",
-          "bullets": [],
           "faClass": "fas fa-cogs",
           "skillList": [
             {
@@ -180,7 +147,6 @@
     {
       "title": "HelpersConnect",
       "description": "A MERN-stack app that allows charitable organizations to manage events and volunteers.",
-      "type": "Group",
       "image": "helpersconnect.png",
       "link": "https://project-03-volunteer-calendar.herokuapp.com/",
       "source": "https://github.com/darnocer/HelpersConnect",
@@ -189,7 +155,6 @@
     {
       "title": "Code Connect",
       "description": "A full-stack social platform for developers to connect to meet, collaborate, and learn",
-      "type": "Group",
       "image": "codeconnect.png",
       "link": "https://project-02-code-connect.herokuapp.com/",
       "source": "https://github.com/darnocer/Project-02-Code-Connect",
@@ -198,7 +163,6 @@
     {
       "title": "Date Nite",
       "description": "A one-click solution to planning dates utilizing server-side APIs.",
-      "type": "Group",
       "image": "datenite.png",
       "link": "https://darnocer.github.io/Project-01-Date-Nite-App/",
       "source": "https://github.com/darnocer/Project-01-Date-Nite-App",
@@ -207,7 +171,6 @@
     {
       "title": "Read-Da-Book",
       "description": "An application to manage a reading list of books on a SQL database rendered with Handlebars.",
-      "type": "Individual",
       "image": "readinglist.png",
       "link": "https://obscure-scrubland-69219.herokuapp.com/",
       "source": "https://github.com/darnocer/Node-Express-Handlebars-Reading-List",
@@ -216,7 +179,6 @@
     {
       "title": "Weather Dashboard",
       "description": "A weather application utilizing server-side APIs and persistent data via local storage.",
-      "type": "Individual",
       "image": "dashboard.png",
       "link": "https://darnocer.github.io/Server-Side-APIs-Weather-Dashboard/",
       "source": "https://github.com/darnocer/Server-Side-APIs-Weather-Dashboard",
@@ -225,7 +187,6 @@
     {
       "title": "Code Quiz",
       "description": "A vanilla Javascript quiz about vanilla Javascript.",
-      "type": "Individual",
       "image": "codequiz.png",
       "link": "https://darnocer.github.io/Web-APIs-Code-Quiz/",
       "source": "https://github.com/darnocer/Web-APIs-Code-Quiz",
@@ -234,7 +195,6 @@
     {
       "title": "The Underdog Foundation",
       "description": "Website for The Underdog Foundation, a 501(c)(3) non-profit organization.",
-      "type": "Individual",
       "image": "theunderdogfoundation.png",
       "link": "https://www.theunderdogfoundation.org",
       "filter": "design"
@@ -242,7 +202,6 @@
     {
       "title": "Genna Rae's Wings & More",
       "description": "Website for Genna Rae's Wings",
-      "type": "Individual",
       "image": "gennaraeswings.png",
       "link": "https://www.gennaraeswings.com",
       "filter": "design"

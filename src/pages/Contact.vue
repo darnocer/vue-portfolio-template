@@ -73,19 +73,8 @@
           data-aos-duration="1000"
         >
           <h2>Send Me A Message</h2>
-          <!-- 
-        <form method="POST" target="_blank">
-          <div class="form-group">
-            <input type="text" name="name" class="form-control" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form> -->
+
+      <!-- START OF 99INBOUND CONTACT FORM CODE  -->
 
           <div
             style="height: 60%; width:90%; margin: 0 auto;"
@@ -94,6 +83,9 @@
             data-path="https://app.99inbound.com/i/eca66ce0-b392-4bc1-8247-13a69c26139a"
             data-token="INp921C8buNbYYUrvGBhrwtt"
           ></div>
+
+        <!-- END OF 99INBOUND CODE  -->
+
         </div>
       </div>
     </div>

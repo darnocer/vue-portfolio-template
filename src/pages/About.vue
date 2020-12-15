@@ -2,7 +2,6 @@
   <section id="about" class="dark-section">
     <div class="container-fluid">
       <h1 class="section-header">{{ heading }}</h1>
-      <h2 class="tagline">{{ about.tagline }}</h2>
       <div class="row">
         <div
           class="col-sm-12 col-md-4 flex-col"

@@ -18,14 +18,14 @@ body {
   overflow-x: hidden;
 }
 
-.test {
-  border: $test-border;
-}
-
 .light-section {
   @include section-color($light-color, $dark-color);
 }
 
 .dark-section {
   @include section-color($dark-color, $light-color);
+}
+
+.dark-bg {
+  background-color: $dark-bg;
 }

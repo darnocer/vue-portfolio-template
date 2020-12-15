@@ -1,36 +1,34 @@
+// primary colors
 $light-color: #f0f0f0;
-$grey-color: #747474;
 $dark-color: #222222;
+$grey-color: #747474;
 $accent-color: #3498db;
-
 $dark-bg: #1d1f21;
 
+// name display
 $title-size: 6rem;
+// typewriter display
 $subtitle-size: 2.4rem;
 
+// font sizes
 $font-size-sm: 0.8rem;
 $font-size-lg: 1.5rem;
-
 $social-size: 1.5rem;
 
+// fonts (imported in index.html)
+$heading-font: "Rubik", sans-serif;
+$body-font: "Karla", sans-serif;
+
+// spacing
 $spacer: 2rem;
 $spacer-sm: 1rem;
 $spacer-lg: 4rem;
 
-$test-border: 2px solid red;
-
+// about me pic
 $profile-pic-height: 300px;
 $profile-pic-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-$heading-font: "Rubik", sans-serif;
-$body-font: "Karla", sans-serif;
-
-$level-high-1: #f12711;
-$level-high-2: #f5ba19;
-
-$level-medium-1: #f12711;
-$level-medium-2: #f5ba19;
-
-$level-low-1: #f12711;
-$level-low-2: #f5ba19;
+// skill bars gradient colors
+$level-color-1: #f12711;
+$level-color-2: #f5ba19;

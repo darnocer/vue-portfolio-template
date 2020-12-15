@@ -41,15 +41,6 @@
         </div>
 
         <div class="skill-content">
-          <div v-if="item.bullets.length" class="skill-description">
-            <ul class="fa-ul">
-              <li v-for="bullet in item.bullets" :key="bullet">
-                <span class="fa-li"><i class="fas fa-check"></i></span
-                >{{ bullet }}
-              </li>
-            </ul>
-          </div>
-
           <!-- start of skill bars  -->
           <div v-if="item.skillList.length !== 0" class="skillbars">
             <div

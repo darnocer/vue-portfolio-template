@@ -15,9 +15,6 @@ body {
   box-sizing: border-box;
   overflow-x: hidden; }
 
-.test {
-  border: 2px solid red; }
-
 .light-section {
   background-color: #f0f0f0;
   color: #222222; }
@@ -29,6 +26,9 @@ body {
   color: #f0f0f0; }
   .dark-section a {
     color: #747474; }
+
+.dark-bg {
+  background-color: #1d1f21; }
 
 html,
 body,
@@ -148,8 +148,6 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  header .dark-bg {
-    background-color: #1d1f21; }
 
 .footer {
   background-color: #1d1f21;
@@ -158,8 +156,6 @@ header {
     color: #f0f0f0; }
   .footer a i:hover {
     color: #3498db; }
-  .footer .list-inline-item .nav-link {
-    color: #f0f0f0; }
   .footer #username {
     text-transform: lowercase; }
     .footer #username a:link {
@@ -168,8 +164,7 @@ header {
       color: #3498db; }
   .footer .social-item i {
     font-size: 1.5rem;
-    padding: 0 2rem;
-    color: #f0f0f0; }
+    padding: 0 2rem; }
 
 #about .profile-pic {
   max-width: 100%;
@@ -238,24 +233,6 @@ header {
 #contact .container-fluid {
   margin: 1.5rem auto; }
 
-.arrow-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  margin: 0;
-  text-align: center; }
-  .arrow-container a {
-    margin: auto; }
-
-.word-cloud text {
-  font-family: "Rubik", sans-serif; }
-  .word-cloud text:hover {
-    transform: scale(2);
-    cursor: pointer; }
-
-/*------------------*/
 .skillbars {
   display: flex;
   flex-direction: column;
@@ -286,41 +263,42 @@ header {
   transform: scaleX(0);
   transform-origin: 0 0; }
 
-.level--100,
-.level--90 {
-  width: 100%;
+[class*="level--"] {
   background: #f12711;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #f5ba19, #f12711);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #f5ba19, #f12711); }
 
-.level--90 {
+[class$="100"] {
+  width: 100%; }
+
+[class$="90"] {
   width: 90%; }
 
-.level--80,
-.level--70 {
-  width: 80%;
-  background: #f12711;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f5ba19, #f12711);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f5ba19, #f12711); }
+[class$="80"] {
+  width: 80%; }
 
-.level--70 {
+[class$="70"] {
   width: 70%; }
 
-.level--60,
-.level--50 {
-  width: 60%;
-  background: #f12711;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f5ba19, #f12711);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f5ba19, #f12711); }
+[class$="60"] {
+  width: 60%; }
 
-.level--50 {
+[class$="50"] {
   width: 50%; }
+
+[class$="40"] {
+  width: 40%; }
+
+[class$="30"] {
+  width: 30%; }
+
+[class$="20"] {
+  width: 20%; }
+
+[class$="10"] {
+  width: 10%; }
 
 @keyframes fillBar {
   to {

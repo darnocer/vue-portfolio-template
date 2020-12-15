@@ -13,12 +13,6 @@
     }
   }
 
-  .list-inline-item {
-    .nav-link {
-      color: $light-color;
-    }
-  }
-
   #username {
     text-transform: lowercase;
 
@@ -36,7 +30,6 @@
     i {
       font-size: $social-size;
       padding: 0 $spacer;
-      color: $light-color;
     }
   }
 }

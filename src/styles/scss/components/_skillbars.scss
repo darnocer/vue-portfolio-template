@@ -34,49 +34,54 @@
   transform-origin: 0 0;
 }
 
-.level--100,
-.level--90 {
-  width: 100%;
-  background: $level-high-1; /* fallback for old browsers */
+[class*="level--"] {
+  background: $level-color-1; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    $level-high-2,
-    $level-high-1
+    $level-color-2,
+    $level-color-1
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, $level-high-2, $level-high-1);
+  background: linear-gradient(to right, $level-color-2, $level-color-1);
+  // width: 100%;
 }
 
-.level--90 {
+[class$="100"] {
+  width: 100%;
+}
+
+[class$="90"] {
   width: 90%;
 }
 
-.level--80,
-.level--70 {
+[class$="80"] {
   width: 80%;
-  background: $level-medium-1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    $level-medium-2,
-    $level-medium-1
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, $level-medium-2, $level-medium-1);
 }
-.level--70 {
+
+[class$="70"] {
   width: 70%;
 }
-.level--60,
-.level--50 {
+
+[class$="60"] {
   width: 60%;
-  background: $level-low-1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    $level-low-2,
-    $level-low-1
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, $level-low-2, $level-low-1);
 }
-.level--50 {
+
+[class$="50"] {
   width: 50%;
+}
+
+[class$="40"] {
+  width: 40%;
+}
+
+[class$="30"] {
+  width: 30%;
+}
+
+[class$="20"] {
+  width: 20%;
+}
+[class$="10"] {
+  width: 10%;
 }
 
 @keyframes fillBar {

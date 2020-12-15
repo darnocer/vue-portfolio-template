@@ -26,8 +26,6 @@
       padding: inherit;
       top: 0;
       bottom: 0;
-      // left: 0;
-      // right: 0;
       width: 100%;
       opacity: 0;
       transition: 0.5s ease;
@@ -42,10 +40,6 @@
         padding: $spacer;
         margin: 0 auto;
         vertical-align: middle;
-
-        i {
-          // margin: $spacer-sm;
-        }
       }
     }
 
