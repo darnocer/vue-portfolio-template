@@ -1,0 +1,18 @@
+// styling specifc to the #about section
+#about {
+  .profile-pic {
+    max-width: 100%;
+    max-height: $profile-pic-height;
+    border-radius: 50%;
+    box-shadow: $profile-pic-shadow;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  #about-content {
+    text-align: justify;
+    font-size: $spacer-sm;
+  }
+}

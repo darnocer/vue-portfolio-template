@@ -1,0 +1,11 @@
+// styling specific to the #skills section
+#skills {
+  #skill-container {
+    margin: $spacer auto;
+    padding: 0;
+    max-width: 600px;
+    .skill-content {
+      margin-top: $spacer-sm;
+    }
+  }
+}

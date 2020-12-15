@@ -1,34 +1,3 @@
-// styling specifc to the #about section
-#about {
-  .profile-pic {
-    max-width: 100%;
-    max-height: $profile-pic-height;
-    border-radius: 50%;
-    box-shadow: $profile-pic-shadow;
-  }
-
-  .tagline {
-    font-size: 1.5rem;
-  }
-
-  #about-content {
-    text-align: justify;
-    font-size: $spacer-sm;
-  }
-}
-
-// styling specific to the #skills section
-#skills {
-  #skill-container {
-    margin: $spacer auto;
-    padding: 0;
-    max-width: 600px;
-    .skill-content {
-      margin-top: $spacer-sm;
-    }
-  }
-}
-
 // styling specific to the portfolio section
 #portfolio {
   .container-fluid {
@@ -86,24 +55,5 @@
         cursor: pointer;
       }
     }
-  }
-}
-
-// styling specific to the #contact section
-#contact {
-  .social-item {
-    padding: 0 0.5rem;
-  }
-
-  ul {
-    margin-top: $spacer;
-  }
-
-  .contact-content {
-    padding: $spacer;
-  }
-
-  .container-fluid {
-    margin: 1.5rem auto;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="row arrow-container">
-    <a class="arrow" href="#about">
+    <a href="#about" class="arrow-icon" role="button">
       <i class="fas fa-chevron-down fa-4x"></i>
     </a>
   </div>
@@ -14,12 +14,10 @@ export default {
   props: {},
   data() {
     return {
-      data: data
+      data: data,
     };
-  }
+  },
 };
 </script>
 
-<style lang="scss">
-@import "../styles/scss/_variables.scss";
-</style>
+<style lang="scss"></style>

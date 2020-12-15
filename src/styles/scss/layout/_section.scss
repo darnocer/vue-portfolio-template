@@ -15,35 +15,8 @@ section {
     }
   }
 
-  h1 {
-    padding-bottom: $spacer;
-  }
-
   .list-group-item {
     background-color: inherit;
-  }
-}
-
-.light-section {
-  background-color: $light-color;
-  color: $dark-color;
-
-  a {
-    color: $grey-color;
-    &:hover {
-      color: $accent-color;
-    }
-  }
-}
-
-.dark-section {
-  background-color: $dark-color;
-  color: $light-color;
-  a {
-    color: $light-color;
-    &:hover {
-      color: $accent-color;
-    }
   }
 }
 

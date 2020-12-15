@@ -15,6 +15,7 @@
     "core-js": "^3.6.5",
     "eslint-loader": "2.1.2",
     "jquery": "^3.5.1",
+    "netlify-cli": "^2.69.1",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.0",
     "typewriter-effect": "^2.13.1",

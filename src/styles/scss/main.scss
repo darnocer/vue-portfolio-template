@@ -1,9 +1,19 @@
-@import "./_variables.scss";
-@import "./_style.scss";
-@import "./_header.scss";
-@import "./_widgets.scss";
-@import "./_section.scss";
-@import "./_pages.scss";
-@import "./_skillbars.scss";
-@import "./_mediaqueries";
-@import "./_footer.scss";
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+@import "./base/base";
+@import "./base/mediaqueries";
+@import "./base/typography";
+
+@import "./layout/section";
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/about";
+@import "./pages/skills";
+@import "./pages/portfolio";
+@import "./pages/contact";
+
+@import "./components/widgets";
+@import "./components/skillbars";
+@import "./components/arrow";

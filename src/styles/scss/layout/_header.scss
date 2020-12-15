@@ -1,0 +1,54 @@
+header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: no-repeat center center fixed;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../assets/images/header-background.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  text-align: center;
+
+  a:link {
+    color: $light-color;
+  }
+
+  .navbar-brand {
+    font-size: $font-size-lg;
+  }
+
+  #FirstName {
+    color: $light-color;
+  }
+
+  #LastName {
+    color: $accent-color;
+  }
+
+  .active-nav {
+    a {
+      color: $accent-color !important;
+    }
+  }
+
+  .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .dark-bg {
+    background-color: $dark-bg;
+  }
+}

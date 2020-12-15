@@ -53,9 +53,9 @@ $(window).on("scroll", function() {
     var nextIndex = currentIndex + 1;
     var nextSection = sections[nextIndex];
     // make the arrow jump to the next section
-    $(".arrow").attr("href", `#${nextSection}`);
+    $(".arrow-icon").attr("href", `#${nextSection}`);
   } else {
-    $(".arrow").attr("href", "#");
+    $(".arrow-icon").attr("href", "#");
   }
 
   if (lastId !== id) {
@@ -63,10 +63,10 @@ $(window).on("scroll", function() {
     // Set/remove active class
     menuItems
       .parent()
-      .removeClass("active")
+      .removeClass("active-nav")
       .end()
       .filter("[href=\\#" + id + "]")
       .parent()
-      .addClass("active");
+      .addClass("active-nav");
   }
 });

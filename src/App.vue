@@ -17,7 +17,6 @@ import Portfolio from "./pages/Portfolio.vue";
 import Contact from "./pages/Contact.vue";
 import Footer from "./pages/Footer.vue";
 
-
 export default {
   name: "App",
   components: {
@@ -26,12 +25,11 @@ export default {
     Skills,
     Portfolio,
     Contact,
-    Footer
-}
-}
+    Footer,
+  },
+};
 </script>
 
 <style>
-@import "./styles/scss/_variables.scss";
 @import "./styles/css/main.css";
 </style>

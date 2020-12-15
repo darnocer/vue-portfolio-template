@@ -1,0 +1,88 @@
+html,
+body,
+#app {
+  font-family: $body-font;
+  font-weight: 400;
+  color: $light-color;
+}
+
+%heading-font {
+  font-family: $heading-font;
+}
+
+%uppercase-heading {
+  text-transform: uppercase;
+  color: $grey-color;
+}
+
+h1 {
+  @extend %heading-font;
+}
+
+h2 {
+  @extend %heading-font;
+  @extend %uppercase-heading;
+  font-size: 1.5rem;
+}
+
+h3 {
+  @extend %heading-font;
+  @extend %uppercase-heading;
+  font-size: 1.1rem;
+}
+
+a {
+  text-transform: uppercase;
+  color: $grey-color;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: $accent-color;
+  }
+}
+
+.section-header {
+  text-decoration: underline;
+  text-decoration-color: $accent-color;
+  text-decoration-thickness: 0.375rem;
+  padding-bottom: $spacer;
+}
+
+p {
+  font-family: $body-font;
+  font-weight: 300;
+}
+
+#greeting {
+  font-family: $heading-font;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: $accent-color;
+  font-size: 1.2rem;
+}
+
+.nav-item {
+  font-family: $body-font;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: $font-size-sm;
+  color: $light-color;
+}
+
+.banner-text {
+  color: $light-color;
+
+  .display-text {
+    font-size: $title-size;
+  }
+  #typewriter {
+    font-size: $subtitle-size;
+    color: inherit;
+    text-transform: none;
+  }
+}
+
+.footer {
+  font-size: $font-size-sm;
+}

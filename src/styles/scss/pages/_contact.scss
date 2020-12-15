@@ -1,0 +1,18 @@
+// styling specific to the #contact section
+#contact {
+  .social-item {
+    padding: 0 0.5rem;
+  }
+
+  ul {
+    margin-top: $spacer;
+  }
+
+  .contact-content {
+    padding: $spacer;
+  }
+
+  .container-fluid {
+    margin: 1.5rem auto;
+  }
+}
