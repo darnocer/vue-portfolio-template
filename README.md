@@ -1,19 +1,15 @@
 # Darian's Portfolio
 
-## This portfolio is under construction!
+## Live Demo: https://www.dnocera.com
 
-### Description
+## Description
 
-This portfolio was built & designed with Vue.js and SCSS.
+This portfolio was built & designed with Vue.js & SCSS.
 
-I plan on converting this into a template to be used by others!
+## Contact
 
-### To-Do
+Contact me at [hello@dariannocera.com](hello@dariannocera.com) or [![Follow on Github](https://img.shields.io/github/followers/darnocer?label=Follow&style=social)](http://www.github.com/darnocer)
 
-- Reformat the "About" section layout
-- Add an interactive timeline
-- Fix bug when arrow calculates next section
-- Better alignment for portfolio item overlay text
-- Fix the spacing for the social icons in the footer on mobile
-- SEO, Social Sharing, and Google Analytics tag
-- Refactoring code & scss
+---
+
+Copyright © 2020 [Darian Nocera](http://www.github.com/darnocer)
