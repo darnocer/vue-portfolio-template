@@ -276,6 +276,8 @@ This project uses SASS / SCSS.
 
 # :scroll: License
 
+_This project is licensed under the terms of the MIT license._
+
 # :thumbsup: Feedback?
 
 > Please be sure you've followed the instructions in this README.
