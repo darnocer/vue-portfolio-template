@@ -2,6 +2,8 @@
 
 ## Live Demo
 
+Disclaimer: This is not the real Bob Ross. Duh.
+
 ## Description
 
 This is a developer portfolio template built with Vue.JS. Knowledge of Vue is not required to use this template! Simply follow these instructions to properly populate your data.
@@ -18,18 +20,31 @@ Mobile-responsive & SEO friendly!
 
 ## Populating Data
 
+### META
+
+uncommment
+
+Title
+
 ### Images
 
 All images can be found in src/assets/images
 Be sure to keep the same filename and extension:
 
 - Replace header-background.jpg with a large hero image
+- recommended size
 - Replace profile-pic.png with a photo of you for the About section
+  -recommnded size
 
 In the portfolio folder, add photos to represent your projects.
 
 - name the filename related to your project
 - use a recommended aspect ratio of 5:3
+
+#### Favicon
+
+You can add a favicon.ico in the /public directory
+instructions for generating a favicon
 
 ### Content
 

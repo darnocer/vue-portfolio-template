@@ -23,12 +23,22 @@
                 </li>
                 <li class="list-group-item">
                   <h3 class="d-inline">
-                    <i class="fa fa-envelope fa-lg"></i> Email:
+                    <i class="fa fa-envelope"></i> Email:
                   </h3>
                   <br class="d-md-none" />
                   <a href="mailto:hello@dariannocera.com">
                     <span>{{ contact.email }}</span>
                   </a>
+                </li>
+
+                <li class="list-group-item">
+                  <h3 class="d-inline">
+                    <i class="fas fa-phone"></i>  Phone:
+                  </h3>
+                  <br class="d-md-none" />
+                  
+                    <span>{{ contact.phone }}</span>
+                  
                 </li>
                 <li class="list-group-item">
                   <h3 class="d-inline">
@@ -42,26 +52,20 @@
                     class="social-item social-spacing list-inline-item"
                   >
                     <a :href="item.url" :alt="item.name">
-                      <i :class="item.faClass"> </i>
+                      <i :class="'fa-lg '+item.faClass"> </i>
                     </a>
                   </div>
                 </li>
                 <li class="list-group-item">
-                  <h3 class="d-inline">
-                    <i class="far fa-file-pdf"></i> Resume:
-                  </h3>
-                  <br class="d-md-none" />
+                  <a :href="contact.resumeLink" target="_blank" alt="resume">
+                  <button class="btn btn-resume"  target="_blank">
+                    <i class="far fa-file-pdf"></i> Resume
+                  </button>
+                  </a>
+                  <!-- <br class="d-md-none" />
                   <a :href="contact.resumeLink" target="_blank">
                     PDF
-                  </a>
-                </li>
-                <li class="list-group-item">
-                  <h3 class="d-inline">
-                    <i class="fas fa-hand-holding-heart"></i> SUPPORT:
-                  </h3>
-                  <a href="http://www.theunderdogfoundation.org" target="_blank"
-                    >The Underdog Foundation</a
-                  >
+                  </a> -->
                 </li>
               </ul>
             </div>
@@ -72,28 +76,50 @@
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          <h2>Send Me A Message</h2>
+          <h2>{{contact.formTitle}}</h2>
+
+<!-- DELETE THIS NON-FUNCTIONAL PLACEHOLDER FORM -->
+  <form>
+
+     <div class="form-group" style="width:90%; margin:1rem auto;">
+    <label for="exampleFormControlTextarea1">Example name</label>
+    <input class="form-control" id="exampleFormControlInput1" placeholder="Enter your name here"/>
+  </div>
+
+  <div class="form-group" style="width:90%; margin:1rem auto;">
+    <label for="exampleFormControlInput1">Example email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  
+
+  <div class="form-group" style="width:90%; margin:1rem auto;">
+    <label for="exampleFormControlTextarea1">Example message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message here"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- END OF PLACEHOLDER FORM  -->
+
+
 
       <!-- START OF 99INBOUND CONTACT FORM CODE  -->
 
-          <div
-            style="height: 60%; width:90%; margin: 0 auto;"
-            class="inbound-form-wrapper"
-            id="form_4095"
-            data-path="https://app.99inbound.com/i/eca66ce0-b392-4bc1-8247-13a69c26139a"
-            data-token="INp921C8buNbYYUrvGBhrwtt"
-          ></div>
+          <!-- Place the <div> container from 99inbound here if you so choose. I reccommend adding a style attribute with the following properties to the div: style="height: 60%; width:90%; margin: 0 auto;" -->
 
         <!-- END OF 99INBOUND CODE  -->
 
         </div>
       </div>
     </div>
+
     <div class="row arrow-container">
-      <a class="arrow" href="#">
+      <a class="arrow-icon" href="#">
         <i class="fas fa-chevron-up fa-4x"></i>
       </a>
     </div>
+
   </section>
 </template>
 

@@ -1,51 +1,95 @@
 {
   "main": {
     "name": {
-        "firstName": "Darian",
-        "lastName": "Nocera"
+        "first": "Bob",
+        "last": "Ross"
     },
+    "logo": true,
     "titles": [
-        "Web Designer.",
-        "Web Developer.",
-        "Technical Expert."
+        "Famous Painter.",
+        "Television Host.",
+        "America's Sweetheart."
     ],
     "headings": {
-      "about": "About Ya Gurl",
-      "skills": "Skillz that Killz",
+      "about": "About",
+      "skills": "Skills",
       "portfolio": "Portfolio",
-      "contact": "Holla @ Me"
+      "contact": "Contact"
     }
   },
     "about": {
-      "bio": "I like to question ideas & challenge the norm. I have always taken an interest in programming & design— I enjoy the systematic approach to problem-solving coupled with the abstract creativity.  When I'm not coding, you can find me camping, hiking, mountain biking, practicing yoga, writing, reading, tending to my plants, or traveling.",
+      "bio": "I discovered oil painting while I was enlisted in the U.S. Air Force in Alaska in the early 1960s. I studied the 'wet-on-wet' technique, also known as 'Alla Prima', used by other great painters such as Rembrandt & Monet. This allowed me to produce complete paintings in less than an hour. I then became an art instructor, creating my iconic image and eventually teaching a TV audience of millions on the TV show The Joy of Painting.",
+      "tagline": "We don't make mistakes, just happy little accidents.",
       "facts": [
         {"name": "Hometown",
-        "value": "Pittsburgh, PA"
+        "value": "Orlando, FL"
         },
-        {"name": "Alma Mater",
-        "value": "Penn State University"
+        {"name": "Painting Technique",
+        "value": "Alla Prima"
+        },
+        {"name": "# of Paintings",
+        "value": "1,143"
         },
         {"name": "Sun Sign",
-        "value": "Aquarius"
-        },
-        {"name": "Pizza Toppings",
-          "value": "Hawaiian"
+          "value": "Scorpio"
         }
       ]
     },
     "skills": {
-    "defaultCategory": "Web Development",
+    "defaultCategory": "Painting",
     
     "categories": [
       {
-        "category": "Web Development",
-        "subtitle": "I'm on a mission to master the front-end.",
-        "faClass": "fas fa-terminal",        
+        "category": "Painting",
+        "subtitle": "My true passion!",
+        "faClass": "fas fa-paint-brush",        
         "skillList":[
           {
-            "name": "Git &bull; Node.js",
+            "name": "Oil Painting",
             "level": "100"
           },
+          {
+            "name": "Watercolor",
+            "level": "90"
+          },
+          
+          {
+            "name": "Acrylic",
+            "level": "70"
+          },
+          {
+            "name": "Pastels",
+            "level": "60"
+          }
+        ]
+      },
+
+      {
+        "category": "Teaching",
+        "subtitle": "",
+        "faClass": "fas fa-chalkboard-teacher",        
+        "skillList":[
+          {
+            "name": "Communication",
+            "level": "90"
+          },
+          
+          {
+            "name": "Patience",
+            "level": "100"
+          },
+          {
+            "name": "Leadership",
+            "level": "90"
+          }
+        ]
+      },
+
+      {
+        "category": "Web Development",
+        "subtitle": "Bet you didn't know I could code.",
+        "faClass": "fas fa-terminal",        
+        "skillList":[
           {
             "name": "HTML &bull; CSS &bull; Bootstrap",
             "level": "90"
@@ -58,183 +102,112 @@
           {
             "name": "React.js &bull; Vue.js",
             "level": "60"
-          },
-          {
-            "name": "SQL &bull; MongoDB",
-            "level": "50"
           }
         ]
-      },
-
-      {
-        "category": "Website Design",
-        "subtitle": "Started on MySpace now I'm here.",
-        "faClass": "fas fa-paint-brush",
-        "skillList": [
-          {
-            "name": "Squarespace &bull; GoDaddy",
-            "level": "100"
-          },
-          {
-            "name": "Content Writing",
-            "level": "80"
-          },
-          {
-            "name": "Adobe Illustrator &bull; Photoshop",
-            "level": "60"
-          },
-          {
-            "name": "SEO",
-            "level": "60"
-          }
-
-        ]
-      },
-          {
-            "category": "Project Managment",
-            "subtitle": "I know how to get $#!+ done.",
-            "faClass": "fas fa-tasks",
-            "skillList": [
-              {
-                "name": "Meeting Deadlines",
-                "level": "100"
-              },
-              {
-                "name": "Task Management &bull; Time Management",
-                "level": "100"
-              },
-              {
-                "name": "Leading Small Teams",
-                "level": "100"
-              },
-              {
-                "name": "Communication",
-                "level": "100"
-              }
-            ]
-          },
-          
-        
-        {
-          "category": "Technical Expertise",
-          "subtitle": "I'm like, really good at Googling.",
-          "text":"Hello World",
-          "faClass": "fas fa-cogs",
-          "skillList": [
-            {
-              "name": "Quality Assurance",
-              "level": "100"
-            },
-            {
-              "name": "Microsoft Suite &bull; G-Suite",
-              "level": "100"
-            },
-            {
-              "name": "Troubleshooting &bull; Debugging",
-              "level": "100"
-            },
-            {
-              "name": "Technical Support",
-              "level": "100"
-            }
-          ]
-        }    
+      }
     ]
   },
 "portfolio": {
-  "defaultFilter": "full-stack",
+  "defaultFilter": "mountains",
   "projects": [
     {
-      "title": "HelpersConnect",
-      "description": "A MERN-stack app that allows charitable organizations to manage events and volunteers.",
-      "image": "helpersconnect.png",
-      "link": "https://project-03-volunteer-calendar.herokuapp.com/",
-      "source": "https://github.com/darnocer/HelpersConnect",
-      "filter": "full-stack"
+      "title": "Peaceful Valley",
+      "description": "S1E8",
+      "image": "peacefulvalley.png",
+      "link": "https://www.twoinchbrush.com/painting/peaceful-valley",
+      "source": "https://www.twoinchbrush.com/painting/peaceful-valley",
+      "filter": "mountains"
         },
     {
-      "title": "Code Connect",
-      "description": "A full-stack social platform for developers to connect to meet, collaborate, and learn",
-      "image": "codeconnect.png",
-      "link": "https://project-02-code-connect.herokuapp.com/",
-      "source": "https://github.com/darnocer/Project-02-Code-Connect",
-      "filter": "full-stack"
+      "title": "Meadow Lake",
+      "description": "S2E1",
+      "image": "meadowlake.png",
+      "link": "https://www.twoinchbrush.com/painting/meadow-lake",
+      "source": "https://www.twoinchbrush.com/painting/meadow-lake",
+      "filter": "mountains"
     },
     {
-      "title": "Date Nite",
-      "description": "A one-click solution to planning dates utilizing server-side APIs.",
-      "image": "datenite.png",
-      "link": "https://darnocer.github.io/Project-01-Date-Nite-App/",
-      "source": "https://github.com/darnocer/Project-01-Date-Nite-App",
-      "filter": "front-end"
+      "title": "Final Grace",
+      "description": "S2E13",
+      "image": "finalgrace.png",
+      "link": "https://www.twoinchbrush.com/painting/final-grace",
+      "source": "https://www.twoinchbrush.com/painting/final-grace",
+      "filter": "mountains"
     },
     {
-      "title": "Read-Da-Book",
-      "description": "An application to manage a reading list of books on a SQL database rendered with Handlebars.",
-      "image": "readinglist.png",
-      "link": "https://obscure-scrubland-69219.herokuapp.com/",
-      "source": "https://github.com/darnocer/Node-Express-Handlebars-Reading-List",
-      "filter": "full-stack"
+      "title": "Purple Splendor",
+      "description": "S4E1",
+      "image": "purplesplendor.png",
+      "link": "https://www.twoinchbrush.com/painting/purple-splendor",
+      "source": "https://www.twoinchbrush.com/painting/purple-splendor",
+      "filter": "snow"
     },
     {
-      "title": "Weather Dashboard",
-      "description": "A weather application utilizing server-side APIs and persistent data via local storage.",
-      "image": "dashboard.png",
-      "link": "https://darnocer.github.io/Server-Side-APIs-Weather-Dashboard/",
-      "source": "https://github.com/darnocer/Server-Side-APIs-Weather-Dashboard",
-      "filter": "front-end"
+      "title": "Winter Stillness",
+      "description": "S5E4",
+      "image": "winterstillness.png",
+      "link": "https://www.twoinchbrush.com/painting/winter-stillness",
+      "source": "https://www.twoinchbrush.com/painting/winter-stillness",
+      "filter": "snow"
     },
     {
-      "title": "Code Quiz",
-      "description": "A vanilla Javascript quiz about vanilla Javascript.",
-      "image": "codequiz.png",
-      "link": "https://darnocer.github.io/Web-APIs-Code-Quiz/",
-      "source": "https://github.com/darnocer/Web-APIs-Code-Quiz",
-      "filter": "front-end"
+      "title": "Grey Winter",
+      "description": "S7E11",
+      "image": "greywinter.png",
+      "link": "https://www.twoinchbrush.com/painting/grey-winter",
+      "source": "https://www.twoinchbrush.com/painting/grey-winter",
+      "filter": "snow"
     },
     {
-      "title": "The Underdog Foundation",
-      "description": "Website for The Underdog Foundation, a 501(c)(3) non-profit organization.",
-      "image": "theunderdogfoundation.png",
-      "link": "https://www.theunderdogfoundation.org",
-      "filter": "design"
+      "title": "Bubbling Stream",
+      "description": "S3E3",
+      "image": "bubblingstream.png",
+      "link": "https://www.twoinchbrush.com/painting/bubbling-stream",
+      "source": "https://www.twoinchbrush.com/painting/bubbling-stream",
+      "filter": "water"
     },
     {
-      "title": "Genna Rae's Wings & More",
-      "description": "Website for Genna Rae's Wings",
-      "image": "gennaraeswings.png",
-      "link": "https://www.gennaraeswings.com",
-      "filter": "design"
+      "title": "Blaze of Color",
+      "description": "S6E13",
+      "image": "blazeofcolor.png",
+      "link": "https://www.twoinchbrush.com/painting/blaze-of-color",
+      "source": "https://www.twoinchbrush.com/painting/blaze-of-color",
+      "filter": "water"
+    },
+    {
+      "title": "Night Light",
+      "description": "S3E8",
+      "image": "nightlight.png",
+      "link": "https://www.twoinchbrush.com/painting/night-light",
+      "source": "https://www.twoinchbrush.com/painting/night-light",
+      "filter": "water"
     }
 
   ]
 },
     "contact":{
-      "text": "If you have any feedback, ideas, or opportunities for me, or if you just wanna say wazzup, email me or message me on LinkedIn.",
-      "city": "Denver, Colorado",
-      "email": "hello@dariannocera.com",
-      "resumeLink": "https://drive.google.com/file/d/1ZoQWPtsZqrEQOVh3a8kiyyR3wDog7IqP/view",
+      "text": "It will probably be pretty hard to reach me, honestly.",
+      "formTitle": "This is not functional without following instructions in the README.",
+      "city": "Orlando, Florida",
+      "email": "info@bobross.com",
+      "phone": "1-800-BOB-ROSS",
+      "resumeLink": "https://www.twoinchbrush.com/all-paintings",
       
       "social": [
           {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/darian-nocera/",
-            "faClass": "fab fa-linkedin fa-lg"
+            "name": "twitter",
+            "url": "https://twitter.com/bobrossofficial",
+            "faClass": "fab fa-twitter"
           },
           {
-            "name": "github",
-            "url": "https://github.com/darnocer",
-            "faClass": "fab fa-github fa-lg"
+            "name": "facebook",
+            "url": "https://www.facebook.com/TheJoyofPaintingWithBobRoss/",
+            "faClass": "fab fa-facebook-f"
           },
           {
-            "name": "dev.to",
-            "url": "https://dev.to/darnocer",
-            "faClass": "fab fa-dev fa-lg"
-          },
-          {
-            "name": "codepen",
-            "url": "https://codepen.io/dariannocera",
-            "faClass": "fab fa-codepen fa-lg"
+            "name": "instagram",
+            "url": "https://www.instagram.com/bobross_thejoyofpainting/",
+            "faClass": "fab fa-instagram"
           }
         ]
       },

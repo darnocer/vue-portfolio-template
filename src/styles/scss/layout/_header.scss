@@ -5,8 +5,8 @@ header {
   background: no-repeat center center fixed;
   background-image: linear-gradient(
       to right bottom,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba($dark-color, $opacity),
+      rgba($dark-color, $opacity)
     ),
     url(../../assets/images/header-background.jpg);
   background-size: cover;
@@ -18,7 +18,8 @@ header {
   }
 
   .navbar-brand {
-    font-size: $font-size-lg;
+    font-size: $font-size-lg * 1.5;
+    letter-spacing: -0.2rem;
   }
 
   #FirstName {
@@ -27,6 +28,10 @@ header {
 
   #LastName {
     color: $accent-color;
+  }
+
+  #Logo {
+    max-height: $logo-height;
   }
 
   .active-nav {

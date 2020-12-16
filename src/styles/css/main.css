@@ -56,11 +56,11 @@ a {
   a:hover {
     cursor: pointer;
     text-decoration: none;
-    color: #3498db; }
+    color: #ed2024; }
 
 .section-header {
   text-decoration: underline;
-  text-decoration-color: #3498db;
+  text-decoration-color: #ed2024;
   text-decoration-thickness: 0.375rem;
   padding-bottom: 2rem; }
 
@@ -72,7 +72,7 @@ p {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #3498db;
+  color: #ed2024;
   font-size: 1.2rem; }
 
 .nav-item {
@@ -116,27 +116,30 @@ section {
   margin: 0 auto; }
 
 .filters .active {
-  color: #3498db; }
+  color: #ed2024; }
 
 header {
   position: relative;
   height: 100%;
   width: 100%;
   background: no-repeat center center fixed;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/header-background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2)), url(../../assets/images/header-background.jpg);
   background-size: cover;
   -webkit-background-size: cover;
   text-align: center; }
   header a:link {
     color: #f0f0f0; }
   header .navbar-brand {
-    font-size: 1.5rem; }
+    font-size: 2.25rem;
+    letter-spacing: -0.2rem; }
   header #FirstName {
     color: #f0f0f0; }
   header #LastName {
-    color: #3498db; }
+    color: #ed2024; }
+  header #Logo {
+    max-height: 4rem; }
   header .active-nav a {
-    color: #3498db !important; }
+    color: #ed2024 !important; }
   header .banner {
     display: inline-block;
     vertical-align: middle;
@@ -155,13 +158,13 @@ header {
   .footer a i:link {
     color: #f0f0f0; }
   .footer a i:hover {
-    color: #3498db; }
+    color: #ed2024; }
   .footer #username {
     text-transform: lowercase; }
     .footer #username a:link {
       color: #f0f0f0; }
     .footer #username a:hover {
-      color: #3498db; }
+      color: #ed2024; }
   .footer .social-item i {
     font-size: 1.5rem;
     padding: 0 2rem; }
@@ -207,16 +210,19 @@ header {
     width: 100%;
     opacity: 0;
     transition: 0.5s ease;
-    background-color: #333333; }
+    background-color: #222222;
+    text-align: center; }
     #portfolio .portfolio-item .overlay .portfolio-item-content {
       position: absolute;
+      width: 100%;
       top: 0;
       bottom: 0;
       overflow: hidden;
       color: #f0f0f0;
       padding: 2rem;
       margin: 0 auto;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-align: center; }
   #portfolio .portfolio-item:hover .overlay {
     opacity: 0.95;
     cursor: pointer; }
@@ -230,8 +236,13 @@ header {
 #contact .contact-content {
   padding: 2rem; }
 
-#contact .container-fluid {
-  margin: 1.5rem auto; }
+.btn-resume {
+  background-color: #ed2024;
+  border-color: #ed2024;
+  color: #f0f0f0; }
+  .btn-resume:hover {
+    background-color: #ca1014;
+    color: #e3e3e3; }
 
 .skillbars {
   display: flex;

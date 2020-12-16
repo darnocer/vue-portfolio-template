@@ -2,6 +2,7 @@
   <section id="about" class="dark-section">
     <div class="container-fluid">
       <h1 class="section-header">{{ heading }}</h1>
+      <h2 class="tagline" :v-if="about.tagline">{{about.tagline}}</h2>
       <div class="row">
         <div
           class="col-sm-12 col-md-4 flex-col"
@@ -57,7 +58,7 @@ export default {
   data() {
     return {
       about: data.about,
-      name: data.main.name.firstName,
+      name: data.main.name.first,
       facts: data.about.facts,
       heading: data.main.headings.about,
     };

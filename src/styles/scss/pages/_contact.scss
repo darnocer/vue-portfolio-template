@@ -11,8 +11,16 @@
   .contact-content {
     padding: $spacer;
   }
+}
 
-  .container-fluid {
-    margin: 1.5rem auto;
+.btn-resume {
+  background-color: $accent-color;
+  border-color: $accent-color;
+
+  color: $light-color;
+
+  &:hover {
+    background-color: darken($accent-color, 10%);
+    color: darken($light-color, 5%);
   }
 }

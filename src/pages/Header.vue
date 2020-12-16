@@ -1,9 +1,12 @@
 <template>
   <header id="home" class="bg">
     <nav class="navbar navbar-expand-lg fixed-top dark-bg">
-      <a class="navbar-brand" href="#" style="text-transform:lowercase;"
-        ><span id="FirstName">darian</span><span id="LastName">nocera.</span></a
-      >
+      <a class="navbar-brand" href="#">
+        <div v-if="main.logo"><img src="../assets/images/logo.png" alt="logo" id="Logo"></div>
+        <div v-if="!main.logo">
+          <span id="FirstName">{{main.name.first}}</span> <span id="LastName">{{main.name.last}}</span>
+        </div>
+        </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -46,7 +49,7 @@ export default {
   props: {},
   data() {
     return {
-      data: data,
+      main: data.main,
     };
   },
 };
