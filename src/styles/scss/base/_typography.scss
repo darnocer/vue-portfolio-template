@@ -45,7 +45,7 @@ a {
 .section-header {
   text-decoration: underline;
   text-decoration-color: $accent-color;
-  text-decoration-thickness: 0.375rem;
+  text-decoration-thickness: $underline-thickness;
   padding-bottom: $spacer;
 }
 
@@ -57,9 +57,9 @@ p {
 #greeting {
   font-family: $heading-font;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   color: $accent-color;
-  font-size: 1.2rem;
+  font-size: $font-size-md;
 }
 
 .nav-item {

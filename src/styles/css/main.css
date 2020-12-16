@@ -71,7 +71,7 @@ p {
 #greeting {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   color: #ed2024;
   font-size: 1.2rem; }
 
@@ -130,7 +130,7 @@ header {
   header a:link {
     color: #f0f0f0; }
   header .navbar-brand {
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     letter-spacing: -0.2rem; }
   header #FirstName {
     color: #f0f0f0; }
@@ -145,7 +145,7 @@ header {
     vertical-align: middle;
     margin: auto;
     width: 85%;
-    padding-bottom: 30px;
+    padding-bottom: 2rem;
     text-align: center;
     position: absolute;
     top: 50%;
