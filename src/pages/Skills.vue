@@ -37,7 +37,7 @@
       >
         <div class="category-heading">
           <h2><i :class="item.faClass"></i> {{ item.category }}</h2>
-          <h3>{{ item.subtitle }}</h3>
+          <h3 :v-if="item.subtitle !== ''">{{ item.subtitle }}</h3>
         </div>
 
         <div class="skill-content">

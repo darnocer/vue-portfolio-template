@@ -19,7 +19,7 @@
   },
     "about": {
       "bio": "I discovered oil painting while I was enlisted in the U.S. Air Force in Alaska in the early 1960s. I studied the 'wet-on-wet' technique, also known as 'Alla Prima', used by other great painters such as Rembrandt & Monet. This allowed me to produce complete paintings in less than an hour. I then became an art instructor, creating my iconic image and eventually teaching a TV audience of millions on the TV show The Joy of Painting.",
-      "tagline": "We don't make mistakes, just happy little accidents.",
+      "tagline": "",
       "facts": [
         {"name": "Hometown",
         "value": "Orlando, FL"
@@ -187,11 +187,12 @@
 },
     "contact":{
       "text": "It will probably be pretty hard to reach me, honestly.",
-      "formTitle": "This is not functional without following instructions in the README.",
+      "formTitle": "Send Me A Message",
       "city": "Orlando, Florida",
       "email": "info@bobross.com",
       "phone": "1-800-BOB-ROSS",
       "resumeLink": "https://www.twoinchbrush.com/all-paintings",
+      "form": true,
       
       "social": [
           {

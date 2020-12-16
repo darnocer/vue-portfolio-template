@@ -236,11 +236,13 @@ header {
 #contact .contact-content {
   padding: 2rem; }
 
-.btn-resume {
+.btn-resume,
+.btn-submit {
   background-color: #ed2024;
   border-color: #ed2024;
   color: #f0f0f0; }
-  .btn-resume:hover {
+  .btn-resume:hover,
+  .btn-submit:hover {
     background-color: #ca1014;
     color: #e3e3e3; }
 

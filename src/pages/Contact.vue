@@ -7,6 +7,7 @@
           class="col-sm-12 col-md-6 flex-col"
           data-aos="fade-right"
           data-aos-duration="1000"
+          style="margin: 0 auto;"
         >
           <div class="contact-content">
             <h2>Connect with Me</h2>
@@ -14,14 +15,14 @@
 
             <div class="contact-info">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">
+                <li v-if="contact.city !==''" class="list-group-item">
                   <h3 class="d-inline">
                     <i class="fas fa-map-marker-alt"></i> Location:
                   </h3>
                   <br class="d-md-none" />
                   <span>&nbsp; {{ contact.city }}</span>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" v-if="contact.email !==''">
                   <h3 class="d-inline">
                     <i class="fa fa-envelope"></i> Email:
                   </h3>
@@ -31,7 +32,7 @@
                   </a>
                 </li>
 
-                <li class="list-group-item">
+                <li class="list-group-item" v-if="contact.phone !==''">
                   <h3 class="d-inline">
                     <i class="fas fa-phone"></i>  Phone:
                   </h3>
@@ -56,16 +57,13 @@
                     </a>
                   </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" v-if="contact.resumeLink !==''">
                   <a :href="contact.resumeLink" target="_blank" alt="resume">
                   <button class="btn btn-resume"  target="_blank">
                     <i class="far fa-file-pdf"></i> Resume
                   </button>
                   </a>
-                  <!-- <br class="d-md-none" />
-                  <a :href="contact.resumeLink" target="_blank">
-                    PDF
-                  </a> -->
+
                 </li>
               </ul>
             </div>
@@ -75,29 +73,28 @@
           class="col-sm-12 col-md-6 flex-col"
           data-aos="fade-right"
           data-aos-duration="1000"
+          v-if="contact.form"
+
         >
-          <h2>{{contact.formTitle}}</h2>
+          <h2 v-if="contact.formTitle !==''">{{contact.formTitle}}</h2>
 
 <!-- DELETE THIS NON-FUNCTIONAL PLACEHOLDER FORM -->
   <form>
 
      <div class="form-group" style="width:90%; margin:1rem auto;">
-    <label for="exampleFormControlTextarea1">Example name</label>
     <input class="form-control" id="exampleFormControlInput1" placeholder="Enter your name here"/>
   </div>
 
   <div class="form-group" style="width:90%; margin:1rem auto;">
-    <label for="exampleFormControlInput1">Example email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email here">
   </div>
   
 
   <div class="form-group" style="width:90%; margin:1rem auto;">
-    <label for="exampleFormControlTextarea1">Example message</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message here"></textarea>
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-submit">Submit</button>
 </form>
 
 <!-- END OF PLACEHOLDER FORM  -->

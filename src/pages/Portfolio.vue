@@ -38,7 +38,7 @@
                 <div class="portfolio-item-content">
                   <h3>{{ item.title }}</h3>
                   <p>{{ item.description }}</p>
-                  <div v-if="item.source" class="link-icons">
+                  <div v-if="item.source !== '' " class="link-icons">
                     <a :href="item.source" title="Source Code" target="_blank">
                       <i class="fas fa-code fa-2x"></i>
                     </a>
