@@ -54,33 +54,45 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 
 ## Meta :gear:
 
+<details>
+<summary>Steps</summary>
+
 - In `/public/index.html` you will see `<meta>` properties commented out. Uncomment them and fill them out as apporiate (_optional_)
 
 > Necessary if you plan on making your portfolio searchable in Google and optimizing for SEO.
 
 - Similarly, fill out the `<title>` tags with your name or a title of your choice.
+  </details>
 
 ## Images :camera:
 
 ### Favicon
 
+<details>
+<summary>Steps</summary>
 - Delete the existing favicon.ico (Note this sometimes takes a while to update on the development server)
 
-* Replace favicon.ico in the `/public` directory with your own favicon (_optional_)
+- Replace favicon.ico in the `/public` directory with your own favicon (_optional_)
 
 > The Favicon needs to be in a `.ico` format. If you have a `.png` you would like to use you can convert it to `.ico` with an online converter such as this one [here](https://icoconvert.com/).
 
+</details>
+
 ### Logo
 
+<details>
+<summary>Steps</summary>
 - Delete `logo.png` from the assets folder
 
 - Add a new `logo.png` file (_optional_)
 
 > If you do not add another logo.png, you first & last name will display in the 'navbar-brand' area
 
+</details>
+
 ### Other Images
 
-- All other images can be found in `src/assets/images`
+**All other images can be found in `src/assets/images`**
 
 > Be sure to keep the same filename and extension for the header-background, profile-pic, & logo.
 
@@ -160,15 +172,19 @@ _The majority of the properties should be self-explanatory. I have outlined some
   - **"filter"** - Which filter the project should show under.
 
 * **"source"** - add a link to the source code of your project (_optional_)
+  </details>
 
 ### Contact
 
+<details>
+<summary>Properties</summary>
 - **"resumeLink"** - This is where the resume link will go which appears as a button. It's recommended to use a PDF, such as a view only link to Google Drive.
 - **"social"** - Social accounts are an array of objects to produce icons that link to your social accounts. Enter an unlimited amonut of objects, and enter at least one.
 - **"text"** - appears as a subtitle above the contact information
 - **form** - `true/false` - true requires additional setup. false will center the contact information.
   - if you do not want to use a contact form, you will still need to [remove the placeholder form](#remove-placeholder)
 - **formTitle** - add a title above your contact for (\_optional)
+</details>
 
 ## **IMPORTANT SETUP FOR CONTACT FORM** :email:
 
@@ -177,6 +193,9 @@ Because this is a static website, we use a third party to handle form requests.
 There can be many ways to do this, but below is a way you can do it in just a few minutes.
 
 ### Setup account & form
+
+<details>
+<summary>Steps</summary>
 
 1. Go to https://app.99inbound.com/
 2. Create a free account (note: use the email you want to receive contact messages to to sign up as you cannot change this after creating your account)
@@ -188,15 +207,23 @@ There can be many ways to do this, but below is a way you can do it in just a fe
 
    > The script is already included in the `index.html` file
 
+   </details>
+
 ### Remove placeholder form <a name="remove-placeholder"></a>
 
+<details>
+<summary>Steps</summary>
 8. Go to `/src/pages/Contact.vue`
 9. Delete the placeholder `<form>` as indicated by the comments
+</details>
 
 #### Add the new form
 
+<details>
+<summary>Steps</summary>
 10. Add the copied code from 99inbound to the location as indicated by the comments in `Contact.vue`
 11. Add the recommended style attribute to the div
+</details>
 
 # :art: Styling
 
