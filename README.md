@@ -46,6 +46,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 - Your content will be updated from `/src/data/data.json`
 - You can update basic styling such as colors by updating the variables explained in `/src/styles/scss/abstract/_variables.scss`
 - Update `index.html` with a title and meta descriptions
+- You should fill everything out unless it's indicated as _optional_
 
   > If you choose not to fill out an _optional_ item, then leave it blank in `data.json` with an empty string `""`
 
@@ -53,11 +54,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 
 ## Meta :gear:
 
-- In `/public/index.html` you will see `<meta>` properties commented out.
-
-```diff
-+ Uncomment them and fill the out as appropriate
-```
+- In `/public/index.html` you will see `<meta>` properties commented out. Uncomment them and fill them out as apporiate (_optional_)
 
 > Necessary if you plan on making your portfolio searchable in Google and optimizing for SEO.
 
@@ -69,9 +66,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 
 - Delete the existing favicon.ico (Note this sometimes takes a while to update on the development server)
 
-```diff
-+ Replace favicon.ico in the `/public` directory with your own favicon
-```
+* Replace favicon.ico in the `/public` directory with your own favicon (_optional_)
 
 > The Favicon needs to be in a `.ico` format. If you have a `.png` you would like to use you can convert it to `.ico` with an online converter such as this one [here](https://icoconvert.com/).
 
@@ -79,9 +74,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 
 - Delete `logo.png` from the assets folder
 
-```diff
-+ Add a new logo file as logo.png
-```
+- Add a new `logo.png` file (_optional_)
 
 > If you do not add another logo.png, you first & last name will display in the 'navbar-brand' area
 
@@ -109,21 +102,30 @@ _The majority of the properties should be self-explanatory. I have outlined some
 
 ### Main
 
+<details>
+<summary>Properties</summary>
+
 - **"titles"** - Refers to the typewriter effect in the hero. Enter an unlimited amount of strings in the array.
 
 - **"logo"** - `true/false`: Enter `true` if you have populated a `logo.png` file. Enter `false` if you prefer to display your first & last name. If you deleted `logo.png` this **must** be **false**.
 
 - **"headings"** - these populate the h1 for each section (eg. "About", "Skills", etc.)
+  </details>
 
 ### About
 
-```diff
-+ "tagline" - Include an h2 under the h1 in your About section.
-```
+<details>
+<summary>Properties</summary>
+
+- **"tagline"** - Include an h2 under the h1 in your About section (_optional_)
 
 - **"facts"** - This is an array of objects. You can enter an unlimited amount of items here, with the recommended max being 6. These populate as list items as key-value pairs in the About section.
+  </details>
 
 ### Skills
+
+<details>
+<summary>Properties</summary>
 
 - **"defaultCategory"** - This is the skill category that will display when the page loads. This must match one of the categories listed exactly. There should not be duplicate categories (required).
 
@@ -131,11 +133,9 @@ _The majority of the properties should be self-explanatory. I have outlined some
   - **"category"** - You can break your skills up by category (eg. Front-End, Back-End, etc.)
   - **"faClass"** - add classes for a [Font Awesome](https://fontawesome.com/) icon to represent the category
 
-```diff
-+ "subtitle" - Add a blurb about the category
-```
+- **"subtitle"** - Add a blurb about the category (_optional_)
 
-- **"skillsList"** - This is an array of objects. These populate as "skill bars" for each skill category. Enter a _"name"_ for the skill (eg. HTML, CSS, Javascript, etc.) and a _"level"_
+* **"skillsList"** - This is an array of objects. These populate as "skill bars" for each skill category. Enter a _"name"_ for the skill (eg. HTML, CSS, Javascript, etc.) and a _"level"_
   - The **level** should be a value of 0-100 in a multiple of 10 (ie. 100, 90, 80, etc) that represents the width the bar will be filled for each skill.
 
 > Reccommended max: 4 skills in each skill list to keep the section height within the viewport.
@@ -144,7 +144,12 @@ _The majority of the properties should be self-explanatory. I have outlined some
 
 > - _Example: `'Javascript &bull; jQuery'` --> Javascript &bull; jQuery_
 
+</details>
+
 ### Portfolio
+
+<details>
+<summary>Properties</summary>
 
 - `"defaultFilter"` - similar concept to the default category in the skills section. This will be the category of projects displayed by default.
 
@@ -154,9 +159,7 @@ _The majority of the properties should be self-explanatory. I have outlined some
   - **"link"** - The main link to the project when clicking on the image, such as the live demo
   - **"filter"** - Which filter the project should show under.
 
-```diff
-+ "source" - Add a link to the source code
-```
+* **"source"** - add a link to the source code of your project (_optional_)
 
 ### Contact
 
@@ -165,16 +168,13 @@ _The majority of the properties should be self-explanatory. I have outlined some
 - **"text"** - appears as a subtitle above the contact information
 - **form** - `true/false` - true requires additional setup. false will center the contact information.
   - if you do not want to use a contact form, you will still need to [remove the placeholder form](#remove-placeholder)
+- **formTitle** - add a title above your contact for (\_optional)
 
-```diff
-+"formTitle" - Add a title above the form
-```
-
-## **IMPORTANT SETUP FOR CONTACT FORM** :email"
+## **IMPORTANT SETUP FOR CONTACT FORM** :email:
 
 Because this is a static website, we use a third party to handle form requests.
 
-There can be many ways to do this, but below is how I set it up on my personal portfolio.
+There can be many ways to do this, but below is a way you can do it in just a few minutes.
 
 ### Setup account & form
 
