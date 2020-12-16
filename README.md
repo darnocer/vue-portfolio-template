@@ -16,7 +16,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 
 # :hammer_and_wrench: Install
 
-## Get Up & Running
+## Get Up & Running :running:
 
 1. Fork the repo
 2. Clone the new repo to your machine
@@ -24,7 +24,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 4. Run `npm run serve` to start the development serve
 5. View your portfolio at `http://localhost:8080`
 
-## Making It Yours
+## Making It Yours :sparkles:
 
 1. Update all of the Images:
 
@@ -37,7 +37,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 
 3. Update the Styling
 
-## Lay of the Land
+## Lay of the Land :desert_island:
 
 - Favicons are stored in `/public/favicon.ico`
 - All other images are found in `/src/assets/images`
@@ -52,15 +52,17 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 
   > If you choose not to fill out an _optional_ item, then leave it blank in `data.json` with an empty string `""`
 
-# Details for Populating Portfolio
+# :pencil: Details for Populating Portfolio
 
 ## Meta
 
 - In `/public/index.html` you will see `<meta>` properties commented out.
 
 ```diff
-+ Uncomment them and fill the out as appropriate if you plan on making your portfolio searchable in Google and optimizing for SEO.
++ Uncomment them and fill the out as appropriate
 ```
+
+> Necessary if you plan on making your portfolio searchable in Google and optimizing for SEO.
 
 - Similarly, fill out the `<title>` tags with your name or a title of your choice.
 
@@ -90,7 +92,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 
 - All other images can be found in `src/assets/images`
 
-> Be sure to keep the same filename and extension for the header-backgroung, profile-pic, & logo.
+> Be sure to keep the same filename and extension for the header-background, profile-pic, & logo.
 
 - In the portfolio folder, add photos to represent your projects
 
