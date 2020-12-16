@@ -12,6 +12,8 @@ This is a developer portfolio template built with **Vue.js**. Knowledge of Vue i
 
 > This template is fully mobile-responsive!
 
+![home](./public/images/home.png)
+
 I made this README extremely detailed, but I promise getting setup is easy-peasy!
 
 # :hammer_and_wrench: Install & Setup
@@ -115,7 +117,7 @@ _The majority of the properties should be self-explanatory. I have outlined some
 ### Main
 
 <details>
-<summary>Properties</summary>
+<summary>Properties (Click to expand)</summary>
 
 - **"titles"** - Refers to the typewriter effect in the hero. Enter an unlimited amount of strings in the array.
 
@@ -126,8 +128,10 @@ _The majority of the properties should be self-explanatory. I have outlined some
 
 ### About
 
+![about](./public/images/about.png)
+
 <details>
-<summary>Properties</summary>
+<summary>Properties (Click to expand)</summary>
 
 - **"tagline"** - Include an h2 under the h1 in your About section (_optional_)
 
@@ -136,8 +140,10 @@ _The majority of the properties should be self-explanatory. I have outlined some
 
 ### Skills
 
+![skills](./public/images/skills.png)
+
 <details>
-<summary>Properties</summary>
+<summary>Properties (Click to expand)</summary>
 
 - **"defaultCategory"** - This is the skill category that will display when the page loads. This must match one of the categories listed exactly. There should not be duplicate categories (required).
 
@@ -160,8 +166,10 @@ _The majority of the properties should be self-explanatory. I have outlined some
 
 ### Portfolio
 
+![portfolio](./public/images/portfolio.png)
+
 <details>
-<summary>Properties</summary>
+<summary>Properties (Click to expand)</summary>
 
 - `"defaultFilter"` - similar concept to the default category in the skills section. This will be the category of projects displayed by default.
 
@@ -176,8 +184,10 @@ _The majority of the properties should be self-explanatory. I have outlined some
 
 ### Contact
 
+![contact](./public/images/contact.png)
+
 <details>
-<summary>Properties</summary>
+<summary>Properties (Click to expand)</summary>
 - **"resumeLink"** - This is where the resume link will go which appears as a button. It's recommended to use a PDF, such as a view only link to Google Drive.
 - **"social"** - Social accounts are an array of objects to produce icons that link to your social accounts. Enter an unlimited amonut of objects, and enter at least one.
 - **"text"** - appears as a subtitle above the contact information
@@ -217,7 +227,7 @@ There can be many ways to do this, but below is a way you can do it in just a fe
 9. Delete the placeholder `<form>` as indicated by the comments
 </details>
 
-#### Add the new form
+### Add the new form
 
 <details>
 <summary>Steps</summary>
