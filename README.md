@@ -251,6 +251,14 @@ This project uses SASS / SCSS.
 
 - In a terminal instance, run `npm run sass` to watch for changes to scss files and compile them into css
 
+# :bell: Features
+
+- Utilizes typewriter-effect npm package
+- Add a list of facts about yourself in your About section
+- Specify skills in different categories and your skill level that will fill the bar up the respective amount to your skill level
+- Add filters for your portfolio projects
+- Animations for each section on scroll
+
 # :star: Credits
 
 - [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
