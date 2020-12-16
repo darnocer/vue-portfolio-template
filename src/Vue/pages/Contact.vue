@@ -121,7 +121,7 @@
 </template>
 
 <script>
-import data from "../data/data.json";
+import data from "../../data/data.json";
 
 export default {
   name: "Contact",

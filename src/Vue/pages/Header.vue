@@ -2,7 +2,7 @@
   <header id="home" class="bg">
     <nav class="navbar navbar-expand-lg fixed-top dark-bg">
       <a class="navbar-brand" href="#">
-        <div v-if="main.logo"><img src="../assets/images/logo.png" alt="logo" id="Logo"></div>
+        <div v-if="main.logo"><img src="../../assets/images/logo.png" alt="logo" id="Logo"></div>
         <div v-if="!main.logo">
           <span id="FirstName">{{main.name.first}}</span> <span id="LastName">{{main.name.last}}</span>
         </div>
@@ -37,7 +37,7 @@
 
 <script>
 import Arrow from "../components/Arrow.vue";
-import data from "../data/data.json";
+import data from "../../data/data.json";
 import Banner from "../components/Banner.vue";
 
 export default {

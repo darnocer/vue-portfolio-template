@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import data from "../data/data.json";
+import data from "../../data/data.json";
 import Typewriter from "typewriter-effect/dist/core";
 
 var titles = data.main.titles;

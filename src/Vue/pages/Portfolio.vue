@@ -32,7 +32,7 @@
           class="col-sm-12 col-md-4 flex-col"
         >
           <div class="portfolio-item">
-            <img :src="require(`../assets/images/portfolio/${item.image}`)" />
+            <img :src="require(`../../assets/images/portfolio/${item.image}`)" />
             <div class="overlay">
               <a :href="item.link" title="Live Demo" target="_blank">
                 <div class="portfolio-item-content">
@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import data from "../data/data.json";
+import data from "../../data/data.json";
 import Arrow from "../components/Arrow.vue";
 
 export default {

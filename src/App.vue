@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import Header from "./pages/Header.vue";
-import About from "./pages/About.vue";
-import Skills from "./pages/Skills.vue";
-import Portfolio from "./pages/Portfolio.vue";
-import Contact from "./pages/Contact.vue";
-import Footer from "./pages/Footer.vue";
+import Header from "./Vue/pages/Header.vue";
+import About from "./Vue/pages/About.vue";
+import Skills from "./Vue/pages/Skills.vue";
+import Portfolio from "./Vue/pages/Portfolio.vue";
+import Contact from "./Vue/pages/Contact.vue";
+import Footer from "./Vue/pages/Footer.vue";
 
 export default {
   name: "App",
