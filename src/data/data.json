@@ -83,27 +83,6 @@
             "level": "90"
           }
         ]
-      },
-
-      {
-        "category": "Web Development",
-        "subtitle": "Bet you didn't know I could code.",
-        "faClass": "fas fa-terminal",        
-        "skillList":[
-          {
-            "name": "HTML &bull; CSS &bull; Bootstrap",
-            "level": "90"
-          },
-          
-          {
-            "name": "Javascript &bull; jQuery",
-            "level": "70"
-          },
-          {
-            "name": "React.js &bull; Vue.js",
-            "level": "60"
-          }
-        ]
       }
     ]
   },
