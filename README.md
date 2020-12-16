@@ -14,7 +14,7 @@ This is a developer portfolio template built with **Vue.js**. Knowledge of Vue i
 
 I made this README extremely detailed, but I promise getting setup is easy-peasy!
 
-# :hammer_and_wrench: Install
+# :hammer_and_wrench: Install & Setup
 
 ## Get Up & Running :running:
 
@@ -24,37 +24,34 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 4. Run `npm run serve` to start the development serve
 5. View your portfolio at `http://localhost:8080`
 
-## Making It Yours :sparkles:
+## Making It Yours (TLDR;) :sparkles:
 
-1. Update all of the Images:
+1. Update all of the [Images](#content):
 
-- `favicon.ico`
-- `header-background.jpg`
-- `logo.png`
-- `potfolio/`
+- replace `favicon.ico`(or delete)
+- replace `header-background.jpg`
+- replace `logo.png` (or delete)
+- add images to the `potfolio/`directory
 
-2. Update the Content
+2. Update the [Content](#content) from the `.json` file
 
-3. Update the Styling
+3. Create a [contact form](#form) using [99inbound](https://app.99inbound.com/)
+
+4. Update the [Styling](#styling) by updating Sass variables
 
 ## Lay of the Land :desert_island:
 
-- Favicons are stored in `/public/favicon.ico`
+- Favicon is stored in `/public/favicon.ico`
 - All other images are found in `/src/assets/images`
 - Your content will be updated from `/src/data/data.json`
 - You can update basic styling such as colors by updating the variables explained in `/src/styles/scss/abstract/_variables.scss`
 - Update `index.html` with a title and meta descriptions
-- Green-highlighed items in this README represent _optional_ content items
-
-  ```diff
-  + optional
-  ```
 
   > If you choose not to fill out an _optional_ item, then leave it blank in `data.json` with an empty string `""`
 
 # :pencil: Details for Populating Portfolio
 
-## Meta
+## Meta :gear:
 
 - In `/public/index.html` you will see `<meta>` properties commented out.
 
@@ -66,7 +63,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 
 - Similarly, fill out the `<title>` tags with your name or a title of your choice.
 
-## Images
+## Images :camera:
 
 ### Favicon
 
@@ -104,7 +101,7 @@ I made this README extremely detailed, but I promise getting setup is easy-peasy
 - `profile-pic.png` - This should be a 1:1 aspect ratio. It will be reduced to 300px.
 - `/portfolio` - Recommended aspect ratio of 5:3
 
-## Content
+## Content :pencil2:
 
 - Nearly all text content is populated via `/src/data/data.json`
 
@@ -167,19 +164,19 @@ _The majority of the properties should be self-explanatory. I have outlined some
 - **"social"** - Social accounts are an array of objects to produce icons that link to your social accounts. Enter an unlimited amonut of objects, and enter at least one.
 - **"text"** - appears as a subtitle above the contact information
 - **form** - `true/false` - true requires additional setup. false will center the contact information.
-  - if you do not want to use a contact form, you will still need to remove the placeholder form
+  - if you do not want to use a contact form, you will still need to [remove the placeholder form](#remove-placeholder)
 
 ```diff
 +"formTitle" - Add a title above the form
 ```
 
-### **IMPORTANT SETUP FOR CONTACT FORM**
+## **IMPORTANT SETUP FOR CONTACT FORM** :email"
 
 Because this is a static website, we use a third party to handle form requests.
 
 There can be many ways to do this, but below is how I set it up on my personal portfolio.
 
-#### Setup account & form
+### Setup account & form
 
 1. Go to https://app.99inbound.com/
 2. Create a free account (note: use the email you want to receive contact messages to to sign up as you cannot change this after creating your account)
@@ -188,9 +185,10 @@ There can be many ways to do this, but below is how I set it up on my personal p
 5. Recommended to use Name, Email, and Message fields
 6. Go to Publish
 7. Under the "Embed in your website section", Copy the provided div ONLY
+
    > The script is already included in the `index.html` file
 
-#### Remove placeholder form
+### Remove placeholder form <a name="remove-placeholder"></a>
 
 8. Go to `/src/pages/Contact.vue`
 9. Delete the placeholder `<form>` as indicated by the comments
@@ -200,7 +198,7 @@ There can be many ways to do this, but below is how I set it up on my personal p
 10. Add the copied code from 99inbound to the location as indicated by the comments in `Contact.vue`
 11. Add the recommended style attribute to the div
 
-# Styling
+# :art: Styling
 
 This project uses SASS / SCSS.
 
@@ -216,7 +214,7 @@ This project uses SASS / SCSS.
 
 - In a terminal instance, run `npm run sass` to watch for changes to scss files and compile them into css
 
-# Credits
+# :star: Credits
 
 - [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 - [Font Awesome](https://fontawesome.com/)
@@ -229,11 +227,11 @@ This project uses SASS / SCSS.
 - [Jonas Schmedtmann](https://codingheroes.io/) for teaching me about Sass
 - www.bobross.com for the content
 
-> I spent a lot of time on this project and would love if you kept credit to me in the footer. But if not, no hard feelings!
+> I spent a lot of time on this project and would love if you kept credit to me in the footer. But if not, no hard feelings! :yellow_heart:
 
-# License
+# :scroll: License
 
-# Feedback?
+# :thumbsup: Feedback?
 
 > Please be sure you've followed the instructions in this README.
 
@@ -241,7 +239,7 @@ If something you've populated in `data.json` doesn't look quite right, let me kn
 
 If you have constructive feedback for how I can improve this template, please let me know!
 
-## Contact
+## Contact :telephone_receiver:
 
 ### Darian Nocera
 
