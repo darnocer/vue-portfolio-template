@@ -27,7 +27,7 @@
                     <i class="fa fa-envelope"></i> Email:
                   </h3>
                   <br class="d-md-none" />
-                  <a href="mailto:hello@dariannocera.com">
+                  <a :href="'mailto:'+ contact.email">
                     <span>{{ contact.email }}</span>
                   </a>
                 </li>
