@@ -151,6 +151,10 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  header .arrow-icon i {
+    color: #f0f0f0; }
+    header .arrow-icon i:hover {
+      color: #ed2024; }
 
 .footer {
   background-color: #1d1f21;

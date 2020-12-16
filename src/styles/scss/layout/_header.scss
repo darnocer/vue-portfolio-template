@@ -52,4 +52,13 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .arrow-icon {
+    i {
+      color: $header-arrow-icon;
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
 }
