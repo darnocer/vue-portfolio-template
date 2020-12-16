@@ -5,23 +5,8 @@ $grey-color: #747474;
 $accent-color: #ed2024;
 $dark-bg: #1d1f21;
 
-// name display
-$title-size: 6rem;
-// typewriter display
-$subtitle-size: 2.4rem;
-
 // opacity for header background
 $opacity: 0.2;
-
-// max height for logo
-$logo-height: 4rem;
-
-// font sizes
-$font-size-sm: 0.8rem;
-$font-size-md: 1.2rem;
-$font-size-lg: 1.5rem;
-$font-size-xl: 1.8rem;
-$social-size: 1.5rem;
 
 // fonts (imported in index.html)
 $heading-font: "Rubik", sans-serif;
@@ -30,16 +15,35 @@ $body-font: "Karla", sans-serif;
 // section header underline thickness
 $underline-thickness: 0.375rem;
 
-// spacing
-$spacer: 2rem;
-$spacer-sm: 1rem;
-$spacer-lg: 4rem;
-
-// about me pic
-$profile-pic-height: 300px;
+// shadow on about me profile pic
 $profile-pic-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 // skill bars gradient colors
 $level-color-1: #f12711;
 $level-color-2: #f5ba19;
+
+// UPDATING THE FOLLOWING CANNOT GUARANTEE MOBILE-RESPONSIVENESS. CHANGE WITH CAUTION.
+
+// font sizes
+$font-size-sm: 0.8rem;
+$font-size-md: 1.2rem;
+$font-size-lg: 1.5rem;
+$font-size-xl: 1.8rem;
+$social-size: 1.5rem;
+
+// name display
+$title-size: 6rem;
+// typewriter display
+$subtitle-size: 2.4rem;
+
+// max height for logo
+$logo-height: 4rem;
+
+// about me pic
+$profile-pic-height: 300px;
+
+// spacing
+$spacer: 2rem;
+$spacer-sm: 1rem;
+$spacer-lg: 4rem;
