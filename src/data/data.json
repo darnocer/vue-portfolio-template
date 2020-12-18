@@ -167,6 +167,7 @@
     "contact":{
       "text": "It will be pretty hard to reach me, probably.",
       "formTitle": "Send Me A Message",
+      "formEndPoint": "",
       "city": "Orlando, Florida",
       "email": "info@bobross.com",
       "phone": "1-800-BOB-ROSS",

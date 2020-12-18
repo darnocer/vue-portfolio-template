@@ -188,52 +188,32 @@ _The majority of the properties should be self-explanatory. I have outlined some
 
 <details>
 <summary>Properties (Click to expand)</summary>
+
 - **"resumeLink"** - This is where the resume link will go which appears as a button. It's recommended to use a PDF, such as a view only link to Google Drive.
-- **"social"** - Social accounts are an array of objects to produce icons that link to your social accounts. Enter an unlimited amonut of objects, and enter at least one.
-- **"text"** - appears as a subtitle above the contact information
-- **form** - `true/false` - true requires additional setup. false will center the contact information.
-  - if you do not want to use a contact form, you will still need to [remove the placeholder form](#remove-placeholder)
-- **formTitle** - add a title above your contact for (\_optional)
+
+* **"social"** - Social accounts are an array of objects to produce icons that link to your social accounts. Enter an unlimited amonut of objects, and enter at least one.
+
+* **"text"** - appears as a subtitle above the contact information
+
+* **form** - `true/false` - true requires additional setup. false will center the contact information.
+
+* **formTitle** - add a title above your contact for (\_optional)
+
+* **formEndPoint** - see contact form setup below
+
 </details>
 
 ## **IMPORTANT SETUP FOR CONTACT FORM** :email:
 
 Because this is a static website, we use a third party to handle form requests.
 
-There can be many ways to do this, but below is a way you can do it in just a few minutes.
-
 ### Setup account & form
-
-<details>
-<summary>Steps</summary>
 
 1. Go to https://app.99inbound.com/
 2. Create a free account (note: use the email you want to receive contact messages to to sign up as you cannot change this after creating your account)
-3. Go to Forms > New Form
-4. Build out your form
-5. Recommended to use Name, Email, and Message fields
-6. Go to Publish
-7. Under the "Embed in your website section", Copy the provided div ONLY
-
-   > The script is already included in the `index.html` file
-
-   </details>
-
-### Remove placeholder form <a name="remove-placeholder"></a>
-
-<details>
-<summary>Steps</summary>
-8. Go to `/src/pages/Contact.vue`
-9. Delete the placeholder `<form>` as indicated by the comments
-</details>
-
-### Add the new form
-
-<details>
-<summary>Steps</summary>
-10. Add the copied code from 99inbound to the location as indicated by the comments in `Contact.vue`
-11. Add the recommended style attribute to the div
-</details>
+3. Go to Form End Points > Create a New End Point
+4. Copy the End Point into the `formEndPoint` property in `data.json` in the contact section
+5. Recommended to add the provided honeypot spam-protection div as well
 
 # :art: Styling
 

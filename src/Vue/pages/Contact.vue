@@ -78,34 +78,46 @@
         >
           <h2 v-if="contact.formTitle !==''">{{contact.formTitle}}</h2>
 
-<!-- DELETE THIS NON-FUNCTIONAL PLACEHOLDER FORM -->
-  <form>
+<!-- start of contact form  -->
 
-     <div class="form-group" style="width:90%; margin:1rem auto;">
-    <input class="form-control" id="exampleFormControlInput1" placeholder="Enter your name here"/>
-  </div>
+<div class="container contact-form">
+  <form :action="contact.formEndPoint" method="POST" target="_blank">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text bg-white">
+            <i class="fa fa-user"></i>&nbsp;
+          </span>
+        </div>
+        <input name="name" type="name" placeholder="Name" class="form-control border-left-0" required>
+      </div>
+    </div>
 
-  <div class="form-group" style="width:90%; margin:1rem auto;">
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email here">
-  </div>
-  
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text bg-white">
+            <i class="fa fa-envelope"></i>
+          </span>
+        </div>
+        <input name="email" type="email" placeholder="Email" class="form-control border-left-0" required>
+      </div>
+    </div>
 
-  <div class="form-group" style="width:90%; margin:1rem auto;">
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message here"></textarea>
-  </div>
+    <div class="form-group">
+      <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
+    </div>
 
-  <button type="submit" class="btn btn-submit">Submit</button>
-</form>
+    <button type="submit" class="btn">
+      <i class="fa fa-paper-plane"></i> 
+      Send
+    </button>
+  </form>
+</div>
 
-<!-- END OF PLACEHOLDER FORM  -->
 
+<!-- end of contact form  -->
 
-
-      <!-- START OF 99INBOUND CONTACT FORM CODE  -->
-
-          <!-- Place the <div> container from 99inbound here if you so choose. I reccommend adding a style attribute with the following properties to the div: style="height: 60%; width:90%; margin: 0 auto;" -->
-
-        <!-- END OF 99INBOUND CODE  -->
 
         </div>
       </div>

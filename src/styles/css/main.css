@@ -240,15 +240,24 @@ header {
 #contact .contact-content {
   padding: 2rem; }
 
+.btn,
 .btn-resume,
-.btn-submit {
+.btn-submit,
+.btn-success {
   background-color: #ed2024;
-  border-color: #ed2024;
+  border-color: transparent;
   color: #f0f0f0; }
+  .btn:hover,
   .btn-resume:hover,
-  .btn-submit:hover {
-    background-color: #ca1014;
+  .btn-submit:hover,
+  .btn-success:hover {
+    background-color: #d31115;
     color: #e3e3e3; }
+
+.contact-form {
+  margin-top: 2rem; }
+  .contact-form button {
+    width: 100%; }
 
 .skillbars {
   display: flex;
