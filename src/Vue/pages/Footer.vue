@@ -44,7 +44,7 @@
         Designed with 👽 by
         <a
           id="username"
-          href="https:www.github.com/darnocer"
+          href="https://www.github.com/darnocer"
           alt="Darian's Github"
           >darnocer</a
         >
