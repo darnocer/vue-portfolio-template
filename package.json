@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --host localhost --port 8080",
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve --host localhost --port 8080",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "sass": "node-sass --watch src/styles/scss/main.scss -o src/styles/css"
+    "sass": "node-sass --watch src/styles/scss/main.scss -o src/styles/css",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot"
   },
+
   "dependencies": {
     "@babel/core": "^7.12.3",
     "aos": "^2.3.4",
@@ -44,6 +46,8 @@
     },
     "rules": {}
   },
+
+
   "browserslist": [
     "> 1%",
     "last 2 versions",
