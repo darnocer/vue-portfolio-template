@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --host localhost --port 8080",
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve --host localhost --port 8080",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "sass": "node-sass --watch src/styles/scss/main.scss -o src/styles/css"
+    "sass": "node-sass --watch src/styles/scss/main.scss -o src/styles/css",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot"
   },
+
   "dependencies": {
     "@babel/core": "^7.12.3",
     "aos": "^2.3.4",
@@ -26,7 +28,7 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
+    "eslint": ">=1.6.0 <6.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   },
@@ -44,6 +46,8 @@
     },
     "rules": {}
   },
+
+
   "browserslist": [
     "> 1%",
     "last 2 versions",
